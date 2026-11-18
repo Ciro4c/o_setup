@@ -146,3 +146,7 @@ python tools/build_site.py
   - Lệnh tự dò máy, mục nào đã cài thì bỏ qua. Thêm `-n` để chạy thử.
 - **Đẩy lên GitHub nhanh**: bấm đúp `sync.bat` (add + commit + push).
 - Sửa `tools/bootstrap/install.*` nếu đổi tên repo, rồi chạy `python tools/build_site.py`.
+
+## Trợ lý chạy ngầm
+
+`osetup assistant install | run | status | uninstall` — tiến trình nhỏ nghe ở `127.0.0.1:47890`, chạy ngầm (Windows: `pythonw` + Task Scheduler, có mục gỡ trong *Installed apps*). Trang web nói chuyện với nó để dò máy và cài ngay. Chỉ chấp nhận request từ các origin trong `~/.osetup/assistant.json` (mặc định `https://ciro4c.github.io`, `localhost`) và chỉ nhận id có trong danh mục.

@@ -297,10 +297,15 @@ def main(argv=None) -> int:
     s.add_argument("profiles", nargs="*")
     s = sub.add_parser("verify", help="kiểm tra ID gói có tồn tại trong kho không")
     s.add_argument("profiles", nargs="*")
+    s = sub.add_parser("assistant", help="trợ lý chạy ngầm (cho trang web điều khiển): install | run | status | uninstall")
+    s.add_argument("action", choices=["install", "run", "status", "uninstall"])
     sub.add_parser("gui", help="mở giao diện đồ hoạ")
     sub.add_parser("menu", help="menu văn bản tương tác")
 
     args = p.parse_args(argv)
+    if getattr(args, "cmd", None) == "assistant":
+        from . import assistant
+        return assistant.main(args.action)
     try:
         apps, profiles = core.load_data(args.profile_file)
         env = core.detect_env(args.target)

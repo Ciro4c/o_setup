@@ -274,5 +274,22 @@ class GovProfiles(unittest.TestCase):
             self.assertTrue(any(i.startswith("gov-") for i in ids), pid)
 
 
+class AssistantTests(unittest.TestCase):
+    def test_origin_rules(self):
+        from osetup import assistant as a
+        self.assertTrue(a.origin_ok(None))
+        self.assertTrue(a.origin_ok("https://ciro4c.github.io"))
+        self.assertTrue(a.origin_ok("http://localhost:8123"))
+        self.assertFalse(a.origin_ok("https://evil.example"))
+        self.assertFalse(a.origin_ok("https://ciro4c.github.io.evil.example"))
+
+    def test_install_rejects_unknown_ids(self):
+        from osetup import assistant as a
+        with self.assertRaises(ValueError):
+            a.start_install(["khong-co-trong-danh-muc"], True)
+        with self.assertRaises(ValueError):
+            a.start_install(["sh-odoo"] if "sh-odoo" in a.State.apps else ["sh-stirling"], True)
+
+
 if __name__ == "__main__":
     unittest.main()

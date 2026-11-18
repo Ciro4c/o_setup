@@ -132,6 +132,23 @@ details summary{cursor:pointer;font-weight:600}
     <div class="fl" style="margin-top:8px"><label style="font-size:13px"><input type="checkbox" id="qiDry"> chỉ xem trước (dry-run)</label><button class="chip on" id="qiCopy" style="margin-left:auto">Sao chép</button></div>
     <p class="note">Lệnh này tải osetup từ chính repo này, <b>tự dò máy</b> phần nào đã cài thì bỏ qua, rồi cài phần còn thiếu theo nhóm/tick bạn chọn.</p>
   </div>
+  <div class="card" id="asCard">
+    <h2>🤖 Trợ lý chạy ngầm <span id="asDot" class="tag">đang kiểm tra…</span></h2>
+    <div id="asOff">
+      <p class="note" style="margin-top:0">Trợ lý là một tiến trình nhỏ chạy ngầm (không cửa sổ, không biểu tượng) trên máy bạn. Cài xong, trang này <b>tự dò máy</b> và bấm <b>Cài ngay</b> là cài luôn, khỏi dán lệnh. Chỉ nghe trên 127.0.0.1, chỉ nhận id trong danh mục osetup, và gỡ được bất cứ lúc nào.</p>
+      <button class="btn" id="asDl">⬇ Tải trình cài trợ lý</button>
+      <p class="note">Máy không cho chạy file tải về? Mở PowerShell rồi <b>dán dòng này</b>:</p>
+      <div class="cmd"><code id="asCmd"></code><button class="chip" id="asCopy">Chép</button></div>
+      <p class="note" id="asUn"></p>
+    </div>
+    <div id="asOn" hidden>
+      <p class="note" style="margin-top:0" id="asInfo"></p>
+      <div class="fl"><button class="chip" id="asScan">↻ Dò lại máy</button><button class="chip" id="asUpd">Kiểm tra bản cập nhật</button><button class="chip" id="asDel">Gỡ trợ lý</button></div>
+      <button class="btn" id="asGo">▶ Cài ngay các mục đã tick</button>
+      <div id="asLinks" class="note"></div>
+      <pre id="asLog" hidden></pre>
+    </div>
+  </div>
   <div class="card">
     <h2><span class="n">4</span>Cách cài</h2>
     <div class="seg" id="mode">
@@ -452,8 +469,61 @@ function quick(){
 function renderQuick(){$("qiCmd").textContent=quick();}
 $("qiDry").onchange=renderQuick;
 $("qiCopy").onclick=async()=>{try{await navigator.clipboard.writeText(quick());$("qiCopy").textContent="Đã chép ✓";setTimeout(()=>$("qiCopy").textContent="Sao chép",1500);}catch(e){}};
-function render(){renderOS();renderGroups();renderList();renderDet();update();}
-render();showStored();
+
+/* ---- trợ lý ---- */
+const AS="http://127.0.0.1:47890";let asOn=false,asBusy=false;
+async function asFetch(path,opt){const r=await fetch(AS+path,Object.assign({cache:"no-store"},opt||{}));return r.json();}
+async function asPing(){
+  let info=null;try{info=await asFetch("/status");}catch(e){}
+  const was=asOn;asOn=!!(info&&info.assistant);
+  $("asDot").textContent=asOn?"● đang chạy":"○ chưa cài";$("asDot").className="tag "+(asOn?"i":"m");
+  $("asOff").hidden=asOn;$("asOn").hidden=!asOn;
+  if(asOn){$("asInfo").textContent=`Trợ lý v${info.version} · ${info.os} · ${info.managers.join("/")||"chưa có trình quản lý gói"}`;if(!was)asScan();}
+}
+async function asScan(){
+  try{const j=await asFetch("/scan");installed.clear();j.installed.forEach(i=>installed.add(i));
+    $("detMsg").textContent=`Trợ lý dò máy: ${installed.size} phần mềm trong danh mục đã có — tự bỏ tick.`;renderList();update();}catch(e){}
+}
+$("asScan").onclick=asScan;
+$("asUpd").onclick=async()=>{$("asLog").hidden=false;$("asLog").textContent="Đang kiểm tra…";try{const j=await asFetch("/updates");$("asLog").textContent=j.text||"(không có dữ liệu — cần winget)";}catch(e){}};
+$("asDel").onclick=async()=>{if(!confirm("Gỡ trợ lý khỏi máy này?"))return;try{await asFetch("/uninstall",{method:"POST",body:"{}"});}catch(e){}setTimeout(asPing,2500);};
+$("asGo").onclick=async()=>{
+  if(asBusy)return;const{pk,mn}=chosen();const ids=[...pk,...mn].map(r=>r.id);
+  if(!ids.length){$("asLog").hidden=false;$("asLog").textContent="Chưa tick mục nào.";return;}
+  asBusy=true;$("asGo").disabled=true;$("asLog").hidden=false;$("asLog").textContent="Đang gửi cho trợ lý…";$("asLinks").innerHTML="";
+  try{
+    const r=await asFetch("/install",{method:"POST",body:JSON.stringify({ids,dry_run:$("qiDry").checked})});
+    if(r.error){$("asLog").textContent="Lỗi: "+r.error;return;}
+    for(;;){await new Promise(s=>setTimeout(s,1500));const j=await asFetch("/job/"+r.job);
+      $("asLog").textContent=j.log.join("\n")+(j.status==="running"||j.status==="queued"?"\n…":"");$("asLog").scrollTop=1e9;
+      if(j.status==="done"||j.status==="failed"){
+        $("asLog").textContent+="\n== "+(j.status==="done"?"Hoàn tất":"Xong (có lỗi)")+" ==";
+        $("asLinks").innerHTML=j.manual.length?"Cần tải/cài tay:<br>"+j.manual.map(m=>`🔗 <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a>`).join("<br>"):"";
+        break;}}
+    asScan();
+  }catch(e){$("asLog").textContent="Mất kết nối với trợ lý: "+e.message;}
+  finally{asBusy=false;$("asGo").disabled=false;}
+};
+function asRender(){
+  const b=baseUrl();
+  if(os==="windows"){
+    $("asCmd").textContent=`irm ${b}assistant.ps1 | iex`;
+    $("asUn").textContent="Gỡ: Settings → Apps → Installed apps → “osetup — Trợ lý cài phần mềm” → Uninstall; hoặc bấm “Gỡ trợ lý” ở đây khi đang kết nối.";
+  }else{
+    $("asCmd").textContent=`curl -fsSL ${b}assistant.sh | bash`;
+    $("asUn").textContent="Gỡ: python3 ~/.osetup-assistant/app/osetup_main.py assistant uninstall (hoặc nút “Gỡ trợ lý” khi đang kết nối).";
+  }
+}
+$("asCopy").onclick=async()=>{try{await navigator.clipboard.writeText($("asCmd").textContent);$("asCopy").textContent="Đã chép ✓";setTimeout(()=>$("asCopy").textContent="Chép",1500);}catch(e){}};
+$("asDl").onclick=()=>{
+  const b=baseUrl(),w=os==="windows";
+  const text=w?`@echo off\r\nchcp 65001 >nul\r\necho Dang cai tro ly osetup...\r\npowershell -NoProfile -ExecutionPolicy Bypass -Command "irm ${b}assistant.ps1 | iex"\r\npause\r\n`
+    :`#!/usr/bin/env bash\ncurl -fsSL ${b}assistant.sh | bash\n`;
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:"text/plain;charset=utf-8"}));
+  a.download=w?"osetup-assistant-setup.bat":"osetup-assistant-setup.sh";a.click();URL.revokeObjectURL(a.href);
+};
+function render(){asRender();renderOS();renderGroups();renderList();renderDet();update();}
+render();showStored();asPing();setInterval(asPing,6000);
 </script>
 </body>
 </html>

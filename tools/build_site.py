@@ -27,6 +27,6 @@ html = html.replace("__DATA__", json.dumps(data, ensure_ascii=False, separators=
 (ROOT / "docs" / "index.html").write_text(html, encoding="utf-8")
 (ROOT / "docs" / ".nojekyll").write_text("")
 import shutil  # noqa: E402
-for f in ("install.ps1", "install.sh"):
+for f in ("install.ps1", "install.sh", "assistant.ps1", "assistant.sh"):
     shutil.copyfile(ROOT / "tools" / "bootstrap" / f, ROOT / "docs" / f)
 print("docs/index.html:", len(html) // 1024, "KB;", len(apps), "ứng dụng;", len(profiles), "nhóm")
