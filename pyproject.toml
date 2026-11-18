@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osetup"
+version = "0.1.0"
+description = "Thiết lập phần mềm ban đầu theo nhóm người dùng (ưu tiên mã nguồn mở)"
+requires-python = ">=3.9"
+
+[project.scripts]
+osetup = "osetup.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["osetup*"]
+
+[tool.setuptools.package-data]
+osetup = ["data/*.json"]

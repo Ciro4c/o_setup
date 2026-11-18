@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>osetup — Thiết lập phần mềm ban đầu theo nhóm người dùng</title>
+<meta name="description" content="Chọn nhóm (học sinh, văn phòng, kỹ sư, thiết kế, kế toán…) và tự cài bộ phần mềm mã nguồn mở phù hợp. Online hoặc offline.">
+<style>
+  :root { --bg:#0f1720; --card:#17212c; --fg:#e6edf3; --muted:#9fb0c0; --acc:#3fb6a8; --line:#243241; }
+  * { box-sizing:border-box }
+  body { margin:0; font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--fg) }
+  a { color:var(--acc) }
+  .wrap { max-width:980px; margin:0 auto; padding:0 20px }
+  header { padding:64px 0 36px; border-bottom:1px solid var(--line) }
+  h1 { font-size:2.4rem; margin:0 0 8px }
+  .lead { color:var(--muted); font-size:1.15rem; max-width:720px; margin:0 0 24px }
+  .btn { display:inline-block; padding:12px 22px; border-radius:8px; background:var(--acc); color:#06201d; font-weight:600; text-decoration:none; margin:0 10px 10px 0 }
+  .btn.alt { background:transparent; color:var(--fg); border:1px solid var(--line) }
+  section { padding:36px 0; border-bottom:1px solid var(--line) }
+  h2 { margin:0 0 16px; font-size:1.5rem }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px }
+  .card h3 { margin:0 0 6px; font-size:1.05rem }
+  .card p { margin:0; color:var(--muted); font-size:.95rem }
+  table { width:100%; border-collapse:collapse; font-size:.95rem }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top }
+  th { color:var(--muted); font-weight:600 }
+  pre { background:#0b1118; border:1px solid var(--line); border-radius:8px; padding:14px; overflow:auto; font-size:.9rem }
+  code { font-family:ui-monospace,Consolas,monospace }
+  .note { color:var(--muted); font-size:.9rem }
+  footer { padding:28px 0 60px; color:var(--muted); font-size:.9rem }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>osetup</h1>
+  <p class="lead">Chọn nhóm đối tượng — học sinh, văn phòng, kỹ sư, thiết kế, kinh doanh, kế toán, marketing, giải trí, media… —
+  và công cụ tự cài bộ <b>môi trường</b> và <b>phần mềm</b> mã nguồn mở phù hợp. Chạy online, hoặc tải sẵn thành gói <b>offline</b> rồi cài sau.</p>
+  <a class="btn" id="dl" href="#">Tải osetup.exe (Windows)</a>
+  <a class="btn alt" id="repo" href="#">Xem mã nguồn trên GitHub</a>
+  <p class="note">Windows: winget · macOS: brew · Linux: apt / flatpak. Không cần cài thêm thư viện Python.</p>
+</div></header>
+
+<section><div class="wrap">
+  <h2>Điểm nổi bật</h2>
+  <div class="grid">
+    <div class="card"><h3>Hai chế độ cài</h3><p>Online: chọn → tải → cài ngay. Offline: tải thành gói trước, mang sang máy khác rồi cài không cần mạng.</p></div>
+    <div class="card"><h3>Tách môi trường / phần mềm</h3><p>VC++, .NET, Java, Python, Git… được cài trước, ứng dụng người dùng cài sau.</p></div>
+    <div class="card"><h3>Không cài trùng</h3><p>Quét máy một lần, đánh dấu “✓ đã cài” và tự bỏ qua mục đã có.</p></div>
+    <div class="card"><h3>Chọn tất cả / gom gọn</h3><p>Một ô chọn mọi nhóm; mọi khu gom gọn được bằng [-]/[+]; có chú giải và tooltip.</p></div>
+    <div class="card"><h3>Khám phá GitHub</h3><p>Quét top N repo nhiều sao theo chủ đề (self-host, CRM, ERP…), lưu vào danh sách riêng.</p></div>
+    <div class="card"><h3>Mở rộng dễ</h3><p>Thêm phần mềm / nhóm riêng bằng <code>custom.json</code>, không cần build lại.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Các nhóm có sẵn</h2>
+  <table>
+    <tr><th>Nhóm</th><th>Phần mềm chính</th></tr>
+    <tr><td>Học sinh / Sinh viên</td><td>LibreOffice, Anki, Zotero, Calibre, Xournal++, Joplin</td></tr>
+    <tr><td>Văn phòng</td><td>LibreOffice, Thunderbird, Jitsi, NAPS2, PDF Arranger, ShareX</td></tr>
+    <tr><td>Kỹ sư</td><td>FreeCAD, LibreCAD, KiCad, QGIS, Octave, Arduino IDE</td></tr>
+    <tr><td>Lập trình viên</td><td>Git, VSCodium, Python, Node.js, Neovim, Podman Desktop, DBeaver</td></tr>
+    <tr><td>Thiết kế</td><td>GIMP, Inkscape, Krita, Scribus, darktable, Blender</td></tr>
+    <tr><td>Kinh doanh · Kế toán</td><td>Thunderbird, Nextcloud, GnuCash, Tesseract + gợi ý CRM / ERP self-host</td></tr>
+    <tr><td>Marketing · Media</td><td>OBS, Shotcut, Kdenlive, Audacity, HandBrake, FFmpeg</td></tr>
+    <tr><td>Giải trí · Tiện ích · Khoa học · AI</td><td>VLC, Kodi, RetroArch · Sysinternals, Rufus · R, LaTeX · Ollama</td></tr>
+  </table>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Dùng nhanh</h2>
+<pre><code># Nhấp đúp osetup.exe để mở giao diện, hoặc dùng dòng lệnh:
+osetup.exe install all --dry-run            # xem trước toàn bộ, chưa cài gì
+osetup.exe install office student -y         # chế độ online
+osetup.exe pack office -d D:\pack            # chế độ offline, bước 1 (có mạng)
+osetup.exe offline-install -d D:\pack -y     # chế độ offline, bước 2 (không cần mạng)
+osetup.exe check design                      # chỉ kiểm tra mục nào đã có / còn thiếu
+osetup.exe discover crm --top 20             # top 20 repo CRM nhiều sao trên GitHub</code></pre>
+  <p class="note">Lưu ý: ID gói winget được soạn từ danh mục công khai nhưng chưa kiểm hết trên máy thật — chạy <code>osetup.exe verify</code> để phát hiện ID sai.</p>
+</div></section>
+
+<footer><div class="wrap">osetup · mã nguồn mở trên <a id="repo2" href="#">GitHub</a></div></footer>
+
+<script>
+  // Tự suy ra owner/repo từ địa chỉ GitHub Pages: https://<owner>.github.io/<repo>/
+  (function () {
+    var host = location.hostname, parts = location.pathname.split("/").filter(Boolean);
+    if (/\.github\.io$/.test(host) && parts.length) {
+      var repo = "https://github.com/" + host.split(".")[0] + "/" + parts[0];
+      document.getElementById("repo").href = repo;
+      document.getElementById("repo2").href = repo;
+      document.getElementById("dl").href = repo + "/releases/latest/download/osetup.exe";
+    }
+  })();
+</script>
+</body>
+</html>

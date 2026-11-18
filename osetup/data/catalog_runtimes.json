@@ -1,0 +1,33 @@
+{
+  "apps": {
+    "vcredist-2015-x64": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2015-2022 x64", "desc": "Thư viện C++ runtime (cần cho hầu hết phần mềm/game)", "winget": "Microsoft.VCRedist.2015+.x64"},
+    "vcredist-2015-x86": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2015-2022 x86", "desc": "Thư viện C++ runtime 32-bit", "winget": "Microsoft.VCRedist.2015+.x86"},
+    "vcredist-2013-x64": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2013 x64", "desc": "Runtime cho phần mềm cũ", "winget": "Microsoft.VCRedist.2013.x64"},
+    "vcredist-2013-x86": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2013 x86", "desc": "Runtime cho phần mềm cũ", "winget": "Microsoft.VCRedist.2013.x86"},
+    "vcredist-2012-x64": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2012 x64", "desc": "Runtime cho phần mềm cũ", "winget": "Microsoft.VCRedist.2012.x64"},
+    "vcredist-2012-x86": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2012 x86", "desc": "Runtime cho phần mềm cũ", "winget": "Microsoft.VCRedist.2012.x86"},
+    "vcredist-2010-x64": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2010 x64", "desc": "Runtime cho phần mềm cũ", "winget": "Microsoft.VCRedist.2010.x64"},
+    "vcredist-2010-x86": {"kind": "runtime", "quiet": true, "name": "VC++ Redistributable 2010 x86", "desc": "Runtime cho phần mềm cũ", "winget": "Microsoft.VCRedist.2010.x86"},
+    "dotnet6-desktop": {"kind": "runtime", "quiet": true, "name": ".NET Desktop Runtime 6", "desc": "Chạy ứng dụng .NET 6 (WPF/WinForms)", "repo": "dotnet/runtime", "license": "MIT", "winget": "Microsoft.DotNet.DesktopRuntime.6"},
+    "dotnet8-desktop": {"kind": "runtime", "quiet": true, "name": ".NET Desktop Runtime 8", "desc": "Chạy ứng dụng .NET 8 (WPF/WinForms)", "repo": "dotnet/runtime", "license": "MIT", "winget": "Microsoft.DotNet.DesktopRuntime.8"},
+    "dotnet9-desktop": {"kind": "runtime", "quiet": true, "name": ".NET Desktop Runtime 9", "desc": "Chạy ứng dụng .NET 9 (WPF/WinForms)", "repo": "dotnet/runtime", "license": "MIT", "winget": "Microsoft.DotNet.DesktopRuntime.9"},
+    "dotnet-sdk": {"kind": "runtime", "name": ".NET SDK 8", "desc": "Bộ phát triển .NET", "repo": "dotnet/sdk", "license": "MIT", "winget": "Microsoft.DotNet.SDK.8", "brew": "dotnet@8", "apt": "dotnet-sdk-8.0"},
+    "webview2": {"kind": "runtime", "quiet": true, "name": "Edge WebView2 Runtime", "desc": "Nhiều app hiện đại cần (Teams, Office add-in…)", "winget": "Microsoft.EdgeWebView2Runtime"},
+    "directx": {"kind": "runtime", "quiet": true, "name": "DirectX End-User Runtime", "desc": "Thư viện đồ hoạ cho game/phần mềm 3D", "winget": "Microsoft.DirectX"},
+    "powershell": {"kind": "runtime", "quiet": true, "name": "PowerShell 7", "desc": "PowerShell hiện đại", "repo": "PowerShell/PowerShell", "license": "MIT", "winget": "Microsoft.PowerShell", "cask": "powershell"},
+    "java21-jre": {"kind": "runtime", "quiet": true, "name": "Temurin JRE 21", "desc": "Java runtime (Minecraft, nhiều phần mềm Java)", "repo": "adoptium/temurin21-binaries", "license": "GPL-2.0+CE", "winget": "EclipseAdoptium.Temurin.21.JRE", "cask": "temurin@21", "apt": "openjdk-21-jre"},
+    "java17-jre": {"kind": "runtime", "quiet": true, "name": "Temurin JRE 17", "desc": "Java runtime LTS cũ hơn", "repo": "adoptium/temurin17-binaries", "license": "GPL-2.0+CE", "winget": "EclipseAdoptium.Temurin.17.JRE", "cask": "temurin@17", "apt": "openjdk-17-jre"},
+    "java21-jdk": {"kind": "runtime", "name": "Temurin JDK 21", "desc": "Bộ phát triển Java", "repo": "adoptium/temurin21-binaries", "license": "GPL-2.0+CE", "winget": "EclipseAdoptium.Temurin.21.JDK", "cask": "temurin@21", "apt": "openjdk-21-jdk"},
+    "vs-buildtools": {"kind": "runtime", "name": "VS 2022 Build Tools", "desc": "Trình biên dịch MSVC (dung lượng lớn)", "winget": "Microsoft.VisualStudio.2022.BuildTools"},
+    "golang": {"bin": "go", "kind": "runtime", "name": "Go", "desc": "Ngôn ngữ Go", "repo": "golang/go", "license": "BSD-3", "winget": "GoLang.Go", "brew": "go", "apt": "golang-go"},
+    "rustup": {"bin": "rustup", "kind": "runtime", "name": "Rustup", "desc": "Rust toolchain", "repo": "rust-lang/rustup", "license": "MIT/Apache-2.0", "winget": "Rustlang.Rustup", "brew": "rustup", "apt": "rustup"},
+    "wget": {"bin": "wget", "kind": "runtime", "quiet": true, "name": "wget", "desc": "Tải file dòng lệnh", "license": "GPL-3.0", "winget": "JernejSimoncic.Wget", "brew": "wget", "apt": "wget"},
+    "curl": {"bin": "curl", "kind": "runtime", "quiet": true, "name": "curl", "desc": "Truyền dữ liệu dòng lệnh", "repo": "curl/curl", "license": "curl", "brew": "curl", "apt": "curl"},
+    "build-essential": {"kind": "runtime", "quiet": true, "name": "build-essential", "desc": "gcc/make và công cụ biên dịch (Linux)", "apt": "build-essential"},
+    "unzip": {"kind": "runtime", "quiet": true, "name": "unzip/zip", "desc": "Nén giải nén (Linux)", "apt": "unzip"},
+    "ca-certs": {"kind": "runtime", "quiet": true, "name": "ca-certificates", "desc": "Chứng chỉ gốc HTTPS (Linux)", "apt": "ca-certificates"},
+    "codecs-linux": {"kind": "runtime", "quiet": true, "name": "Restricted extras", "desc": "Codec & font Microsoft cho Ubuntu", "apt": "ubuntu-restricted-extras"},
+    "flatpak-pkg": {"kind": "runtime", "quiet": true, "name": "Flatpak", "desc": "Hệ thống gói Flatpak (Linux)", "repo": "flatpak/flatpak", "license": "LGPL-2.1", "apt": "flatpak"},
+    "fonts-noto": {"kind": "runtime", "quiet": true, "name": "Noto Fonts", "desc": "Font hiển thị tiếng Việt đầy đủ (Linux)", "apt": "fonts-noto"}
+  }
+}

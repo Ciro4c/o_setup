@@ -1,0 +1,188 @@
+{
+ "apps": {
+  "gov-java8": {
+   "kind": "runtime",
+   "name": "Java 8 JRE (Temurin)",
+   "desc": "Một số cổng/phần mềm ký số cũ vẫn cần Java 8",
+   "license": "GPL-2.0 + CE",
+   "winget": "EclipseAdoptium.Temurin.8.JRE",
+   "apt": "openjdk-8-jre"
+  },
+  "gov-htkk": {
+   "name": "HTKK (Hỗ trợ kê khai thuế)",
+   "desc": "Phần mềm kê khai thuế của Tổng cục Thuế, cần Windows + .NET 3.5+",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://www.gdt.gov.vn/wps/portal/home/hotrokekhai"
+   }
+  },
+  "gov-itaxviewer": {
+   "name": "iTaxViewer",
+   "desc": "Xem/in tờ khai XML đã nộp (cùng trang hỗ trợ kê khai)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://www.gdt.gov.vn/wps/portal/home/hotrokekhai"
+   }
+  },
+  "gov-thuedientu": {
+   "name": "Cổng Thuế điện tử",
+   "desc": "Nộp tờ khai, nộp thuế điện tử (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://thuedientu.gdt.gov.vn"
+   }
+  },
+  "gov-dvc-thue": {
+   "name": "Cổng Dịch vụ công ngành Thuế",
+   "desc": "Kênh dịch vụ công thuế chính thức (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://dichvucong.gdt.gov.vn"
+   }
+  },
+  "gov-tracuu-mst": {
+   "name": "Tra cứu mã số thuế",
+   "desc": "Tra cứu thông tin người nộp thuế (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://tracuunnt.gdt.gov.vn"
+   }
+  },
+  "gov-canhan-thue": {
+   "name": "Thuế cá nhân (eTax Mobile/canhan)",
+   "desc": "Quyết toán, đăng ký MST cá nhân (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://canhan.gdt.gov.vn"
+   }
+  },
+  "gov-bhxh-gddt": {
+   "name": "BHXH – Giao dịch điện tử",
+   "desc": "Kê khai, nộp hồ sơ BHXH qua cổng BHXH Việt Nam (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://gddt.baohiemxahoi.gov.vn"
+   }
+  },
+  "gov-bhxh-dvc": {
+   "name": "BHXH – Cổng dịch vụ công",
+   "desc": "Dịch vụ công của BHXH Việt Nam (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://dichvucong.baohiemxahoi.gov.vn"
+   }
+  },
+  "gov-bhxh-tnhs": {
+   "name": "BHXH – Tiếp nhận hồ sơ (TNHS)",
+   "desc": "Tiếp nhận và quản lý hồ sơ (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://tnhs.baohiemxahoi.gov.vn"
+   }
+  },
+  "gov-ebhxh": {
+   "name": "eBHXH (I-VAN của EFY)",
+   "desc": "Kê khai BHXH điện tử trên web, không cần cài; có thu phí",
+   "license": "Thương mại (I-VAN)",
+   "manual": {
+    "windows": "https://baohiemxahoidientu.vn"
+   }
+  },
+  "gov-vnpt-bhxh": {
+   "name": "VNPT-BHXH (I-VAN)",
+   "desc": "Dịch vụ kê khai BHXH của VNPT; có thu phí",
+   "license": "Thương mại (I-VAN)",
+   "manual": {
+    "windows": "https://vnpt-bhxh.vn"
+   }
+  },
+  "gov-vin-bhxh": {
+   "name": "VIN-BHXH (I-VAN)",
+   "desc": "Phần mềm kê khai BHXH của VISNAM; có thu phí",
+   "license": "Thương mại (I-VAN)",
+   "manual": {
+    "windows": "https://vin-bhxh.vn"
+   }
+  },
+  "gov-dvc-quocgia": {
+   "name": "Cổng Dịch vụ công quốc gia",
+   "desc": "Nộp hồ sơ thủ tục hành chính trực tuyến (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://dichvucong.gov.vn"
+   }
+  },
+  "gov-vneid": {
+   "name": "VNeID (định danh điện tử)",
+   "desc": "Ứng dụng di động (iOS/Android), đăng nhập dịch vụ công; mở trang giới thiệu",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://vneid.gov.vn"
+   }
+  },
+  "gov-vgca": {
+   "name": "VGCA Sign Service + driver GCA01/Bit4ID",
+   "desc": "Ban Cơ yếu Chính phủ: ký số văn bản, trình điều khiển token VGCA",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://ca.gov.vn/tai-phan-mem"
+   }
+  },
+  "gov-vnpt-ca": {
+   "name": "VNPT-CA Token Manager AN + driver",
+   "desc": "Quản lý token, driver, plugin ký số VNPT",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://vnpt-ca.vn/download-page"
+   }
+  },
+  "gov-vnpt-ca-plugin": {
+   "name": "VNPT-CA Plugin",
+   "desc": "Plugin ký số cho trình duyệt/giao dịch ngân hàng",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://kyso.vnpt-ca.vn/#download-section"
+   }
+  },
+  "gov-viettel-ca": {
+   "name": "Viettel-CA Token Manager",
+   "desc": "Thường nằm trên ổ đĩa ảo của token (viettel-ca_pki_token.exe); xem trang Viettel-CA",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://viettel-ca.vn"
+   }
+  },
+  "gov-fpt-ca": {
+   "name": "FPT-CA / FPT.eSign",
+   "desc": "Driver token và ứng dụng ký số FPT; app MPKI ở trang tải FPT",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://rssp.fis.com.vn/downloads-fpt"
+   }
+  },
+  "gov-bkav-ca": {
+   "name": "BkavCA Token Manager (BTM)",
+   "desc": "Quản lý token BkavCA",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://bkavca.vn"
+   }
+  },
+  "gov-ecus5": {
+   "name": "ECUS5-VNACCS (Thái Sơn)",
+   "desc": "Khai báo hải quan điện tử VNACCS; có bản thương mại",
+   "license": "Thương mại",
+   "manual": {
+    "windows": "https://thaison.vn"
+   }
+  },
+  "gov-customs": {
+   "name": "Cổng Hải quan / VNACCS",
+   "desc": "Cổng thông tin Hải quan (mở trang web)",
+   "license": "Miễn phí (cơ quan/nhà cung cấp)",
+   "manual": {
+    "windows": "https://www.customs.gov.vn"
+   }
+  }
+ }
+}

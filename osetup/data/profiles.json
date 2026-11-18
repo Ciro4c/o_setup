@@ -1,0 +1,610 @@
+{
+ "profiles": {
+  "base": {
+   "name": "Cơ bản (luôn kèm theo)",
+   "desc": "Nền tảng cho mọi máy: trình duyệt, nén file, xem media, đọc PDF, mật khẩu, bộ gõ tiếng Việt, terminal",
+   "core": [
+    "firefox",
+    "7zip",
+    "vlc",
+    "keepassxc",
+    "sumatrapdf",
+    "okular",
+    "openkey",
+    "ibus-bamboo",
+    "notepadpp",
+    "wt",
+    "git",
+    "localsend"
+   ],
+   "optional": [
+    "powertoys",
+    "brave",
+    "mpchc",
+    "mpv",
+    "bleachbit",
+    "syncthing"
+   ],
+   "popular": [
+    "pop-chrome",
+    "pop-unikey",
+    "pop-zalo",
+    "pop-acrobat",
+    "pop-winrar",
+    "pop-zoom",
+    "pop-anydesk"
+   ]
+  },
+  "runtimes": {
+   "name": "Thư viện nền tảng (runtime) — luôn kèm theo",
+   "desc": "VC++ Redistributable 2010-2022, .NET Desktop 6/8/9, Java, WebView2, DirectX, PowerShell 7; Linux: build-essential, codec, font, flatpak",
+   "core": [
+    "vcredist-2015-x64",
+    "vcredist-2015-x86",
+    "vcredist-2013-x64",
+    "vcredist-2013-x86",
+    "vcredist-2012-x64",
+    "vcredist-2012-x86",
+    "vcredist-2010-x64",
+    "vcredist-2010-x86",
+    "dotnet6-desktop",
+    "dotnet8-desktop",
+    "dotnet9-desktop",
+    "webview2",
+    "directx",
+    "java21-jre",
+    "java17-jre",
+    "powershell",
+    "curl",
+    "wget",
+    "unzip",
+    "ca-certs",
+    "build-essential",
+    "flatpak-pkg",
+    "fonts-noto",
+    "codecs-linux"
+   ]
+  },
+  "student": {
+   "name": "Học sinh / Sinh viên",
+   "desc": "Soạn tài liệu, ghi chú, học từ vựng, trích dẫn, đọc ebook, lập trình cơ bản",
+   "core": [
+    "libreoffice",
+    "anki",
+    "zotero",
+    "calibre",
+    "xournalpp",
+    "joplin",
+    "thonny",
+    "drawio"
+   ],
+   "optional": [
+    "onlyoffice",
+    "logseq",
+    "python",
+    "vscodium",
+    "obs",
+    "audacity",
+    "octave",
+    "gimp",
+    "texstudio",
+    "miktex",
+    "pdfarranger"
+   ],
+   "popular": [
+    "pop-obsidian",
+    "pop-notion",
+    "pop-zoom",
+    "pop-teams",
+    "pop-discord",
+    "pop-spotify"
+   ],
+   "selfhost": [
+    "sh-moodle"
+   ]
+  },
+  "office": {
+   "name": "Nhân viên văn phòng",
+   "desc": "Office, email, họp online, quét & xử lý PDF, chụp màn hình, đồng bộ & chat nội bộ",
+   "core": [
+    "libreoffice",
+    "thunderbird",
+    "jitsi",
+    "telegram",
+    "joplin",
+    "naps2",
+    "pdfarranger",
+    "flameshot",
+    "sharex",
+    "drawio",
+    "nextcloud"
+   ],
+   "optional": [
+    "onlyoffice",
+    "bitwarden",
+    "signal",
+    "element",
+    "mattermost",
+    "tesseract",
+    "winmerge",
+    "meld",
+    "rustdesk",
+    "filezilla",
+    "syncthing",
+    "logseq"
+   ],
+   "popular": [
+    "pop-zoom",
+    "pop-teams",
+    "pop-slack",
+    "pop-zalo",
+    "pop-acrobat",
+    "pop-foxit",
+    "pop-notion",
+    "pop-teamviewer",
+    "pop-anydesk"
+   ],
+   "selfhost": [
+    "sh-nextcloud",
+    "sh-stirling",
+    "sh-bookstack",
+    "sh-rocketchat"
+   ]
+  },
+  "engineer": {
+   "name": "Kỹ sư (cơ khí / điện / xây dựng / GIS)",
+   "desc": "CAD, mạch điện tử, GIS, tính toán số, mô phỏng, vi điều khiển, in 3D, LaTeX",
+   "core": [
+    "freecad",
+    "librecad",
+    "solvespace",
+    "kicad",
+    "qgis",
+    "octave",
+    "python",
+    "arduino",
+    "libreoffice",
+    "paraview"
+   ],
+   "optional": [
+    "openscad",
+    "cura",
+    "blender",
+    "vscodium",
+    "git",
+    "wireshark",
+    "r-lang",
+    "texstudio",
+    "miktex",
+    "winmerge",
+    "putty",
+    "drawio"
+   ],
+   "popular": [
+    "pop-vscode",
+    "pop-acrobat",
+    "pop-anydesk"
+   ]
+  },
+  "dev": {
+   "name": "Lập trình viên",
+   "desc": "Git, editor, runtime, container, database, API, mạng, terminal",
+   "core": [
+    "git",
+    "ghcli",
+    "vscodium",
+    "python",
+    "nodejs",
+    "neovim",
+    "ripgrep",
+    "jq",
+    "wt",
+    "wezterm",
+    "java21-jdk",
+    "golang",
+    "rustup",
+    "dotnet-sdk"
+   ],
+   "optional": [
+    "podman-desktop",
+    "dbeaver",
+    "bruno",
+    "wireshark",
+    "cmake",
+    "winmerge",
+    "meld",
+    "godot",
+    "tabby",
+    "putty",
+    "winscp",
+    "filezilla",
+    "vs-buildtools",
+    "ollama",
+    "imagemagick",
+    "ffmpeg",
+    "sysinternals"
+   ],
+   "popular": [
+    "pop-vscode",
+    "pop-docker",
+    "pop-postman",
+    "pop-slack",
+    "pop-discord"
+   ],
+   "selfhost": [
+    "sh-n8n",
+    "sh-uptimekuma",
+    "sh-vaultwarden"
+   ]
+  },
+  "design": {
+   "name": "Thiết kế đồ hoạ",
+   "desc": "Ảnh, vector, vẽ, dàn trang, 3D, ảnh RAW, hoạt hình",
+   "core": [
+    "gimp",
+    "inkscape",
+    "krita",
+    "scribus",
+    "darktable",
+    "blender",
+    "pinta"
+   ],
+   "optional": [
+    "upscayl",
+    "pencil2d",
+    "screentogif",
+    "flameshot",
+    "imagemagick",
+    "drawio",
+    "ffmpeg"
+   ],
+   "popular": [
+    "pop-figma",
+    "pop-capcut",
+    "pop-davinci",
+    "pop-acrobat"
+   ],
+   "selfhost": [
+    "sh-penpot"
+   ]
+  },
+  "sales": {
+   "name": "Nhân viên kinh doanh",
+   "desc": "Email, họp, chat khách hàng, báo giá bằng Office, CRM, đồng bộ",
+   "core": [
+    "libreoffice",
+    "thunderbird",
+    "jitsi",
+    "telegram",
+    "nextcloud",
+    "flameshot",
+    "sharex",
+    "bitwarden",
+    "naps2",
+    "pdfarranger"
+   ],
+   "optional": [
+    "onlyoffice",
+    "signal",
+    "element",
+    "mattermost",
+    "rustdesk",
+    "drawio",
+    "joplin"
+   ],
+   "popular": [
+    "pop-zalo",
+    "pop-zoom",
+    "pop-teams",
+    "pop-slack",
+    "pop-acrobat",
+    "pop-foxit",
+    "pop-notion",
+    "pop-teamviewer"
+   ],
+   "selfhost": [
+    "sh-twenty",
+    "sh-suitecrm",
+    "sh-espocrm",
+    "sh-odoo",
+    "sh-chatwoot",
+    "sh-nocodb"
+   ]
+  },
+  "accounting": {
+   "name": "Kế toán",
+   "desc": "Bảng tính, sổ sách, quét chứng từ + OCR, xử lý PDF (MISA/Fast/Bravo cần cài riêng)",
+   "core": [
+    "libreoffice",
+    "gnucash",
+    "naps2",
+    "tesseract",
+    "pdfarranger",
+    "thunderbird",
+    "nextcloud"
+   ],
+   "optional": [
+    "onlyoffice",
+    "bitwarden",
+    "joplin",
+    "syncthing",
+    "rustdesk"
+   ],
+   "popular": [
+    "pop-foxit",
+    "pop-acrobat",
+    "pop-winrar",
+    "pop-zalo",
+    "pop-unikey",
+    "pop-teamviewer",
+    "pop-anydesk"
+   ],
+   "selfhost": [
+    "sh-erpnext",
+    "sh-odoo",
+    "sh-akaunting",
+    "sh-invoiceninja",
+    "sh-firefly",
+    "sh-paperless",
+    "sh-metabase"
+   ]
+  },
+  "marketing": {
+   "name": "Marketing / Content",
+   "desc": "Ảnh, vector, dựng video ngắn, quay màn hình, thu âm, GIF, nhắn tin",
+   "core": [
+    "gimp",
+    "inkscape",
+    "obs",
+    "shotcut",
+    "kdenlive",
+    "audacity",
+    "handbrake",
+    "sharex",
+    "screentogif",
+    "pinta"
+   ],
+   "optional": [
+    "upscayl",
+    "telegram",
+    "thunderbird",
+    "libreoffice",
+    "ytdlp",
+    "losslesscut",
+    "subtitleedit",
+    "ffmpeg",
+    "drawio",
+    "imagemagick"
+   ],
+   "popular": [
+    "pop-capcut",
+    "pop-figma",
+    "pop-davinci",
+    "pop-zalo",
+    "pop-notion",
+    "pop-spotify"
+   ],
+   "selfhost": [
+    "sh-listmonk",
+    "sh-matomo",
+    "sh-postiz",
+    "sh-penpot",
+    "sh-mautic",
+    "sh-chatwoot"
+   ]
+  },
+  "entertainment": {
+   "name": "Giải trí",
+   "desc": "Xem phim, nghe nhạc, giả lập game, game miễn phí, torrent",
+   "core": [
+    "vlc",
+    "mpchc",
+    "mpv",
+    "kodi",
+    "jellyfin-player",
+    "strawberry",
+    "retroarch",
+    "supertuxkart",
+    "heroic"
+   ],
+   "optional": [
+    "dolphin",
+    "pcsx2",
+    "qbittorrent",
+    "godot"
+   ],
+   "popular": [
+    "pop-steam",
+    "pop-epic",
+    "pop-discord",
+    "pop-spotify"
+   ],
+   "selfhost": [
+    "sh-jellyfin",
+    "sh-immich"
+   ]
+  },
+  "media": {
+   "name": "Media / Sản xuất video – âm thanh",
+   "desc": "Dựng phim, thu âm, soạn nhạc, chuyển mã, phụ đề, quản lý thư viện",
+   "core": [
+    "obs",
+    "kdenlive",
+    "shotcut",
+    "audacity",
+    "handbrake",
+    "ffmpeg",
+    "mkvtoolnix",
+    "mediainfo",
+    "blender",
+    "losslesscut",
+    "subtitleedit"
+   ],
+   "optional": [
+    "openshot",
+    "lmms",
+    "ardour",
+    "musescore",
+    "picard",
+    "ytdlp",
+    "darktable",
+    "mpv"
+   ],
+   "popular": [
+    "pop-davinci",
+    "pop-capcut",
+    "pop-spotify"
+   ]
+  },
+  "utilities": {
+   "name": "Tiện ích hệ thống / IT",
+   "desc": "Chẩn đoán, ổ cứng, USB boot, SSH/FTP, điều khiển từ xa, đồng bộ",
+   "core": [
+    "sysinternals",
+    "windirstat",
+    "crystaldiskinfo",
+    "crystaldiskmark",
+    "rufus",
+    "ventoy",
+    "etcher",
+    "bleachbit",
+    "putty",
+    "winscp",
+    "filezilla",
+    "rustdesk",
+    "syncthing",
+    "powertoys",
+    "tabby"
+   ],
+   "optional": [
+    "wireshark",
+    "wezterm",
+    "imagemagick"
+   ],
+   "popular": [
+    "pop-anydesk",
+    "pop-teamviewer",
+    "pop-winrar"
+   ],
+   "selfhost": [
+    "sh-uptimekuma",
+    "sh-vaultwarden"
+   ]
+  },
+  "science": {
+   "name": "Nghiên cứu / Khoa học dữ liệu",
+   "desc": "Python, R, LaTeX, trích dẫn, tính toán số, trực quan hoá",
+   "core": [
+    "python",
+    "r-lang",
+    "rstudio",
+    "octave",
+    "texstudio",
+    "miktex",
+    "zotero",
+    "vscodium",
+    "paraview",
+    "qgis"
+   ],
+   "optional": [
+    "thonny",
+    "git",
+    "joplin",
+    "logseq",
+    "drawio",
+    "calibre"
+   ],
+   "popular": [
+    "pop-obsidian",
+    "pop-vscode"
+   ],
+   "selfhost": [
+    "sh-metabase",
+    "sh-nocodb"
+   ]
+  },
+  "ai": {
+   "name": "AI cục bộ",
+   "desc": "Chạy mô hình ngôn ngữ trên máy của bạn",
+   "core": [
+    "ollama",
+    "python",
+    "git"
+   ],
+   "optional": [
+    "vscodium",
+    "ffmpeg"
+   ],
+   "popular": [
+    "pop-lmstudio"
+   ],
+   "selfhost": [
+    "sh-openwebui",
+    "sh-n8n"
+   ]
+  },
+  "gov-tax": {
+   "name": "Nhà nước – Thuế",
+   "desc": "Kê khai thuế: HTKK, iTaxViewer, cổng Thuế điện tử",
+   "core": [
+    "gov-htkk",
+    "gov-itaxviewer",
+    "gov-thuedientu",
+    "gov-dvc-thue",
+    "gov-tracuu-mst",
+    "gov-canhan-thue",
+    "gov-java8"
+   ],
+   "optional": [],
+   "popular": [],
+   "selfhost": []
+  },
+  "gov-insurance": {
+   "name": "Nhà nước – Bảo hiểm xã hội",
+   "desc": "Kê khai BHXH: cổng BHXH Việt Nam và các nhà cung cấp I-VAN",
+   "core": [
+    "gov-bhxh-gddt",
+    "gov-bhxh-dvc",
+    "gov-bhxh-tnhs"
+   ],
+   "optional": [
+    "gov-ebhxh",
+    "gov-vnpt-bhxh",
+    "gov-vin-bhxh"
+   ],
+   "popular": [],
+   "selfhost": []
+  },
+  "gov-service": {
+   "name": "Nhà nước – Dịch vụ công",
+   "desc": "Cổng DVC quốc gia, VNeID, hải quan",
+   "core": [
+    "gov-dvc-quocgia",
+    "gov-vneid"
+   ],
+   "optional": [
+    "gov-customs",
+    "gov-ecus5"
+   ],
+   "popular": [],
+   "selfhost": []
+  },
+  "gov-esign": {
+   "name": "Nhà nước – Chữ ký số",
+   "desc": "Driver/plugin token theo nhà cung cấp (chọn đúng CA bạn đang dùng)",
+   "core": [
+    "gov-vgca",
+    "gov-java8"
+   ],
+   "optional": [
+    "gov-vnpt-ca",
+    "gov-vnpt-ca-plugin",
+    "gov-viettel-ca",
+    "gov-fpt-ca",
+    "gov-bkav-ca"
+   ],
+   "popular": [],
+   "selfhost": []
+  }
+ }
+}
