@@ -97,15 +97,15 @@ details summary{cursor:pointer;font-weight:600}
     <div id="starMsg" class="note"></div>
     <div id="list"></div>
   </div>
-  <div class="card">
-    <h2><span class="n">★</span>Dò máy: phần mềm nào đã có sẵn?</h2>
+  <details class="card"><summary>Dò máy thủ công (khi chưa cài trợ lý): dán danh sách phần mềm đang có</summary>
+    <h2 style="margin-top:10px"><span class="n">★</span>Phần mềm nào đã có sẵn?</h2>
     <p class="note" style="margin-top:0">Trình duyệt không được phép đọc danh sách phần mềm của máy. Vì vậy chạy 1 lệnh dưới đây trên máy cần cài, rồi dán kết quả vào đây — mục nào đã có sẽ được đánh <span class="tag i">✓ đã cài</span> và tự bỏ tick để khỏi cài trùng.</p>
     <div class="cmd"><code id="detCmd"></code><button class="chip" id="detCopy">Sao chép</button></div>
     <p class="note" id="detHow"></p>
     <textarea id="detTxt" placeholder="Dán kết quả lệnh vào đây…"></textarea>
     <div class="fl" style="margin-top:8px"><button class="chip on" id="detRun">Phân tích</button><button class="chip" id="detClr">Xoá kết quả dò</button><label class="chip" style="cursor:pointer">Hoặc chọn file .txt<input type="file" id="detFile" accept=".txt,.csv,.log" hidden></label></div>
     <div id="detMsg" class="note"></div>
-  </div>
+  </details>
   <div class="card">
     <h2><span class="n">★</span>Gợi ý tự triển khai — quét GitHub top sao</h2>
     <p class="note" style="margin-top:0" id="dStored"></p>
@@ -252,7 +252,6 @@ function section(key,title,rows,q){
   rows=sortRows(rows.filter(r=>match(r,q)));
   if(!rows.length)return"";
   const isClosed=closed.has(key);
-  const allOn=rows.filter(r=>r.ac).every(r=>isOn(r)||installed.has(r.id)&&!$("optForce").checked&&!off.has(r.id));
   let h=`<div class="sec"><button data-s="${key}"><span>${isClosed?"[+]":"[-]"}</span>${title}<span class="cnt">(${rows.length})</span><span class="tg" data-t="${key}">${rows.every(r=>!r.ac||isOn(r))?"bỏ hết":"chọn hết"}</span></button>`;
   if(!isClosed)h+=rows.map(r=>{
     const dis=!r.ac,done=installed.has(r.id)&&!$("optForce").checked;

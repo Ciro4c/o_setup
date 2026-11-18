@@ -189,7 +189,7 @@ class Discover(unittest.TestCase):
             old = core.USER_DIR
             core.USER_DIR = Path(t)
             self.addCleanup(lambda: setattr(core, "USER_DIR", old))
-            f = core.save_selfhost([{"full_name": "Foo/Bar-App", "stars": 1, "desc": "d", "url": "https://x", "license": "MIT"}])
+            core.save_selfhost([{"full_name": "Foo/Bar-App", "stars": 1, "desc": "d", "url": "https://x", "license": "MIT"}])
             core.save_selfhost([{"full_name": "Foo/Bar-App", "stars": 1, "desc": "d", "url": "https://x", "license": "MIT"}])  # lưu lại: không trùng
             apps, profiles = core.load_data()
             self.assertEqual(profiles["my-selfhost"]["selfhost"], ["sh-foo-bar-app"])

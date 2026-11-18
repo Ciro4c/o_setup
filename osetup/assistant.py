@@ -255,8 +255,7 @@ def _stop_running() -> None:
     except Exception:
         pass
     if platform.system() == "Windows":
-        subprocess.run(["taskkill", "/F", "/FI", "IMAGENAME eq pythonw.exe", "/FI", "WINDOWTITLE eq osetup*"], creationflags=NOWIN, capture_output=True)
-        # tìm tiến trình đang giữ cổng
+        # dự phòng: tìm tiến trình đang giữ cổng rồi tắt
         out = subprocess.run(["netstat", "-ano", "-p", "tcp"], capture_output=True, text=True, creationflags=NOWIN).stdout
         for ln in out.splitlines():
             if f"127.0.0.1:{PORT}" in ln and "LISTENING" in ln:
