@@ -108,11 +108,12 @@ details summary{cursor:pointer;font-weight:600}
   </div>
   <div class="card">
     <h2><span class="n">★</span>Gợi ý tự triển khai — quét GitHub top sao</h2>
+    <p class="note" style="margin-top:0" id="dStored"></p>
     <div class="fl">
       <select id="dPreset"></select>
       Top <input type="number" id="dTop" value="20" min="5" max="50" style="width:70px">
       <input type="text" id="dLang" placeholder="Ngôn ngữ (vd Go)" style="width:130px">
-      <button class="chip on" id="dGo">Quét GitHub</button>
+      <button class="chip on" id="dGo">Quét trực tiếp ngay</button>
       <button class="chip" id="dCsv">Tải CSV</button>
     </div>
     <div class="fl"><input type="password" id="tok" placeholder="GitHub token (tuỳ chọn, tăng giới hạn)" style="flex:1;min-width:200px"></div>
@@ -124,6 +125,13 @@ details summary{cursor:pointer;font-weight:600}
   </div>
 </div>
 <aside class="side">
+  <div class="card">
+    <h2>⚡ Cài nhanh — 1 dòng lệnh, không cần tải file</h2>
+    <p class="note" style="margin-top:0" id="qiHow"></p>
+    <div class="cmd"><code id="qiCmd"></code></div>
+    <div class="fl" style="margin-top:8px"><label style="font-size:13px"><input type="checkbox" id="qiDry"> chỉ xem trước (dry-run)</label><button class="chip on" id="qiCopy" style="margin-left:auto">Sao chép</button></div>
+    <p class="note">Lệnh này tải osetup từ chính repo này, <b>tự dò máy</b> phần nào đã cài thì bỏ qua, rồi cài phần còn thiếu theo nhóm/tick bạn chọn.</p>
+  </div>
   <div class="card">
     <h2><span class="n">4</span>Cách cài</h2>
     <div class="seg" id="mode">
@@ -152,7 +160,7 @@ const ua=navigator.userAgent;
 let os=/Mac/.test(ua)?"macos":/Linux|X11/.test(ua)&&!/Android/.test(ua)?"linux":"windows";
 let mode="online";
 const sel=new Set(),off=new Set(),closed=new Set(),installed=new Set();
-let stars={};try{stars=JSON.parse(localStorage.getItem("osetup.stars")||"{}");}catch(e){}
+let stars=Object.assign({},DATA.stars);try{Object.assign(stars,JSON.parse(localStorage.getItem("osetup.stars")||"{}"));}catch(e){}
 let dRows=[];
 const $=id=>document.getElementById(id);
 const BASE=["base","runtimes"];
@@ -319,22 +327,40 @@ $("getStars").onclick=async()=>{
   $("starMsg").textContent=`Đã lấy số sao cho ${done} repo.`+(fail?" "+fail:"")+(repos.length>lim?` Còn ${repos.length-lim} repo — bấm lại để lấy tiếp.`:"");
   renderList();
 };
-$("dPreset").innerHTML=Object.entries(PRE).map(([k,v])=>`<option value="${k}">${esc(v[0])}</option>`).join("");
-$("dGo").onclick=async()=>{
+$("dPreset").innerHTML=Object.entries(PRE).map(([k,v])=>`<option value="${k}">${esc(v[0])}${DATA.top[k]?" ✓":""}</option>`).join("");
+function showTop(rows,msg){
+  dRows=rows;$("dMsg").textContent=msg;
+  $("dOut").innerHTML=rows.map((x,i)=>`<div class="row"><span>${i+1}</span><span><b><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.full_name)}</a></b><span class="tag s">★ ${fmt(x.stars)}</span>${x.language?`<span class="tag">${esc(x.language)}</span>`:""}<span class="tag">${esc(x.license)}</span><div class="d">${esc(x.desc||"")}</div></span><span></span></div>`).join("");
+}
+function showStored(){
+  const k=$("dPreset").value,s=DATA.top[k];
+  const lang=$("dLang").value.trim().toLowerCase(),top=Math.max(5,Math.min(50,+$("dTop").value||20));
+  if(s&&s.items&&s.items.length){
+    let rows=s.items;if(lang)rows=rows.filter(x=>(x.language||"").toLowerCase()===lang);
+    rows=rows.slice(0,top);
+    $("dStored").textContent=`Dữ liệu do bot tự cào, cập nhật: ${s.updated}. Bấm "Quét trực tiếp" để lấy bản mới nhất.`;
+    showTop(rows,`Top ${rows.length} repo nhiều sao nhất — ${PRE[k][0]}${lang?" ("+lang+")":""}.`);
+  }else{
+    $("dStored").textContent="Chưa có dữ liệu do bot cào (vào tab Actions của repo → refresh-data → Run workflow). Đang quét trực tiếp…";
+    $("dOut").innerHTML="";liveScan();
+  }
+}
+async function liveScan(){
   const top=Math.max(5,Math.min(50,+$("dTop").value||20));
   let q=PRE[$("dPreset").value][1]+" archived:false";const lang=$("dLang").value.trim();if(lang)q+=" language:"+lang;
-  $("dMsg").textContent="Đang quét GitHub…";$("dOut").innerHTML="";
+  $("dMsg").textContent="Đang quét GitHub…";
   try{
     const r=await fetch("https://api.github.com/search/repositories?"+new URLSearchParams({q,sort:"stars",order:"desc",per_page:top}),{headers:hdr()});
     if(!r.ok){$("dMsg").textContent=ghErr(r);return;}
     const j=await r.json();
-    dRows=(j.items||[]).map(x=>({name:x.full_name,stars:x.stargazers_count,lang:x.language||"",license:(x.license&&x.license.spdx_id)||"?",desc:x.description||"",url:x.html_url}));
-    $("dMsg").textContent=`Top ${dRows.length} repo nhiều sao nhất cho "${PRE[$("dPreset").value][0]}"${lang?" ("+lang+")":""}.`;
-    $("dOut").innerHTML=dRows.map((x,i)=>`<div class="row"><span>${i+1}</span><span><b><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a></b><span class="tag s">★ ${fmt(x.stars)}</span>${x.lang?`<span class="tag">${esc(x.lang)}</span>`:""}<span class="tag">${esc(x.license)}</span><div class="d">${esc(x.desc)}</div></span><span></span></div>`).join("");
+    showTop((j.items||[]).map(x=>({full_name:x.full_name,stars:x.stargazers_count,language:x.language||"",license:(x.license&&x.license.spdx_id)||"?",desc:x.description||"",url:x.html_url})),
+      `Top ${(j.items||[]).length} repo nhiều sao nhất (quét trực tiếp) — ${PRE[$("dPreset").value][0]}${lang?" ("+lang+")":""}.`);
   }catch(e){$("dMsg").textContent="Không gọi được GitHub: "+e.message;}
-};
-$("dCsv").onclick=()=>{if(!dRows.length){$("dMsg").textContent="Chưa có kết quả — bấm Quét GitHub trước.";return;}
-  const csv="﻿repo,stars,language,license,url,description\n"+dRows.map(x=>[x.name,x.stars,x.lang,x.license,x.url,x.desc].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(",")).join("\n");
+}
+$("dGo").onclick=liveScan;
+$("dPreset").onchange=showStored;$("dLang").onchange=$("dTop").onchange=showStored;
+$("dCsv").onclick=()=>{if(!dRows.length){$("dMsg").textContent="Chưa có kết quả.";return;}
+  const csv="\ufeffrepo,stars,language,license,url,description\n"+dRows.map(x=>[x.full_name,x.stars,x.language,x.license,x.url,x.desc].map(v=>'"'+String(v||"").replace(/"/g,'""')+'"').join(",")).join("\n");
   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));a.download="osetup-top-github.csv";a.click();URL.revokeObjectURL(a.href);};
 $("legend").innerHTML=Object.entries(LEG).map(([k,v])=>`<div><b>${esc(k)}</b> — ${esc(v)}</div>`).join("");
 
@@ -399,11 +425,35 @@ function update(){
   $("pre").textContent=pk.length||mn.length?s.text.replace(/\r/g,""):"(chưa chọn gì)";
   $("how").textContent=os==="windows"?"Tải file .bat → chuột phải → Run as administrator.":"Tải file .sh → chạy: bash "+s.name;
   $("dl").disabled=!(pk.length||mn.length);
+  renderQuick();
 }
 $("dl").onclick=()=>{const s=build();const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([s.text],{type:"text/plain;charset=utf-8"}));a.download=s.name;a.click();URL.revokeObjectURL(a.href);};
 $("cp").onclick=async()=>{try{await navigator.clipboard.writeText(build().text.replace(/\r/g,""));$("cp").textContent="Đã sao chép ✓";setTimeout(()=>$("cp").textContent="Sao chép lệnh",1500);}catch(e){}};
+function baseUrl(){return /^https?:/.test(location.protocol)?location.href.replace(/[#?].*$/,"").replace(/[^/]*$/,""):DATA.default_base;}
+function quick(){
+  const c=candidates();
+  const rows=[...c.runtimes,...c.apps,...c.pop,...c.manual].filter(r=>r.ac&&r.ac.m!=="manual");
+  const skip=rows.filter(r=>off.has(r.id)).map(r=>r.id);
+  const gs=[...sel];let a=["install"];
+  if(gs.length===groupIds.length)a.push("--everything");else a.push(...gs);
+  if($("optOpt").checked)a.push("--all");
+  if($("optPop").checked)a.push("--popular");
+  if(skip.length&&skip.length<=40)a.push("--skip",skip.join(","));
+  if($("optForce").checked)a.push("--force");
+  a.push($("qiDry").checked?"-n":"-y");
+  const args=a.join(" "),b=baseUrl();
+  if(os==="windows"){
+    $("qiHow").textContent="Mở PowerShell bằng Run as administrator, dán dòng sau:";
+    return `$env:OSETUP_ARGS='${args}'; irm ${b}install.ps1 | iex`;
+  }
+  $("qiHow").textContent="Mở Terminal, dán dòng sau:";
+  return `curl -fsSL ${b}install.sh | OSETUP_ARGS='${args}' bash`;
+}
+function renderQuick(){$("qiCmd").textContent=quick();}
+$("qiDry").onchange=renderQuick;
+$("qiCopy").onclick=async()=>{try{await navigator.clipboard.writeText(quick());$("qiCopy").textContent="Đã chép ✓";setTimeout(()=>$("qiCopy").textContent="Sao chép",1500);}catch(e){}};
 function render(){renderOS();renderGroups();renderList();renderDet();update();}
-render();
+render();showStored();
 </script>
 </body>
 </html>

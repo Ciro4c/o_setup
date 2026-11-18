@@ -136,3 +136,13 @@ Trang được sinh từ dữ liệu trong `osetup/data/`; sau khi sửa catalog
 ```
 python tools/build_site.py
 ```
+
+## Trợ lý tự động & cài 1 dòng lệnh
+
+- **Bot cập nhật** (`.github/workflows/refresh.yml`): mỗi ngày tự cào top 20 GitHub theo từng chủ đề + số sao của mọi repo trong danh mục, dựng lại `docs/index.html` rồi commit. Chạy ngay: tab **Actions → refresh-data → Run workflow**.
+- **Cài 1 dòng lệnh** (hiện sẵn trên trang web, đổi theo nhóm/tick bạn chọn):
+  - Windows (PowerShell, Run as administrator): `$env:OSETUP_ARGS='install student -y'; irm https://<user>.github.io/<repo>/install.ps1 | iex`
+  - Linux/macOS: `curl -fsSL https://<user>.github.io/<repo>/install.sh | OSETUP_ARGS='install student -y' bash`
+  - Lệnh tự dò máy, mục nào đã cài thì bỏ qua. Thêm `-n` để chạy thử.
+- **Đẩy lên GitHub nhanh**: bấm đúp `sync.bat` (add + commit + push).
+- Sửa `tools/bootstrap/install.*` nếu đổi tên repo, rồi chạy `python tools/build_site.py`.

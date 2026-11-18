@@ -1,0 +1,35 @@
+name: refresh-data
+# Trợ lý tự động: mỗi ngày cào top GitHub + số sao, dựng lại trang web (docs/), rồi commit.
+on:
+  schedule:
+    - cron: "17 21 * * *"   # 04:17 sáng giờ VN
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["osetup/data/catalog*.json", "osetup/data/profiles.json", "tools/**"]
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests
+      - name: Cào top GitHub + số sao
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/refresh_data.py
+      - name: Dựng lại trang web
+        run: python tools/build_site.py
+      - name: Commit nếu có thay đổi
+        run: |
+          git config user.name "osetup-bot"
+          git config user.email "osetup-bot@users.noreply.github.com"
+          git add -A osetup/data docs
+          if git diff --cached --quiet; then echo "Không có thay đổi"; else
+            git commit -m "bot: cập nhật top GitHub, số sao và trang web"
+            git push
+          fi
