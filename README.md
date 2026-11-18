@@ -125,3 +125,14 @@ Khoá gói: `winget`, `brew` (formula), `cask` (macOS app), `apt`, `flatpak`; `m
 - Trên Linux, bản `apt` có thể cũ hơn; dùng `--prefer flatpak` để lấy bản mới.
 
 Chạy test: `python -m unittest discover -s tests`
+
+
+## Trang web (GitHub Pages)
+
+`docs/index.html` là một trang chạy được: chọn hệ điều hành + nhóm → tick/bỏ tick → tải script cài đặt
+(`.bat` cho Windows dùng winget, `.sh` cho macOS/Linux; có chế độ tải offline cho Windows).
+Trang được sinh từ dữ liệu trong `osetup/data/`; sau khi sửa catalog/profiles hãy chạy lại:
+
+```
+python tools/build_site.py
+```

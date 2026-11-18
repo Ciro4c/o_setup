@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>osetup — Thiết lập phần mềm ban đầu theo nhóm</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2330;--mut:#667085;--line:#e4e7ec;--pri:#2563eb;--pri2:#1d4ed8;--ok:#16a34a;--warn:#b45309;--chip:#eef2ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0f141b;--card:#171e28;--ink:#e6eaf0;--mut:#98a2b3;--line:#2a3441;--chip:#1e2a44}}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:28px 20px 8px;max-width:1100px;margin:auto}
+h1{margin:0 0 4px;font-size:26px}
+header p{margin:0;color:var(--mut)}
+main{max-width:1100px;margin:auto;padding:12px 20px 120px;display:grid;grid-template-columns:1fr 340px;gap:18px}
+@media(max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:15px;margin:0 0 10px;display:flex;gap:8px;align-items:center}
+.n{background:var(--pri);color:#fff;border-radius:50%;width:22px;height:22px;display:inline-grid;place-items:center;font-size:12px}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button,.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;font:inherit}
+.seg button.on,.chip.on{background:var(--pri);border-color:var(--pri);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip small{opacity:.7}
+.opts{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;color:var(--mut);font-size:14px}
+.opts label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.tools{display:flex;gap:8px;margin-bottom:10px}
+.tools input[type=search]{flex:1;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+.sec{border-top:1px solid var(--line);padding-top:6px;margin-top:8px}
+.sec>button{all:unset;cursor:pointer;display:flex;width:100%;gap:8px;align-items:center;padding:6px 0;font-weight:600}
+.sec>button .cnt{color:var(--mut);font-weight:400;font-size:13px}
+.sec .tg{margin-left:auto;font-weight:400;color:var(--pri);font-size:13px}
+.row{display:grid;grid-template-columns:22px 1fr auto;gap:10px;padding:7px 4px;border-radius:8px;align-items:start}
+.row:hover{background:var(--chip)}
+.row.dis{opacity:.5}
+.row b{font-weight:600}
+.row .d{color:var(--mut);font-size:13px}
+.tag{font-size:11px;border-radius:5px;padding:1px 6px;margin-left:6px;background:var(--chip);color:var(--pri);white-space:nowrap}
+.tag.m{background:#fef3c7;color:var(--warn)}
+.tag.g{background:#dcfce7;color:var(--ok)}
+.pkg{font:12px ui-monospace,Consolas,monospace;color:var(--mut);text-align:right;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.side{position:sticky;top:12px;align-self:start}
+.btn{display:block;width:100%;padding:11px;border-radius:9px;border:0;background:var(--pri);color:#fff;font:600 15px inherit;cursor:pointer;margin-top:8px}
+.btn:hover{background:var(--pri2)}
+.btn.sec2{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.sum{color:var(--mut);font-size:14px}
+.sum b{color:var(--ink)}
+pre{background:#0b1220;color:#d6e2ff;padding:10px;border-radius:8px;overflow:auto;max-height:240px;font-size:12px;margin:8px 0 0}
+a{color:var(--pri)}
+.note{font-size:13px;color:var(--mut);margin-top:8px}
+.empty{color:var(--mut);padding:14px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>osetup</h1>
+  <p>Chọn nhóm người dùng → tick phần mềm → tải script cài đặt một lần cho cả máy. Ưu tiên mã nguồn mở / repo nhiều sao.</p>
+</header>
+<main>
+<div>
+  <div class="card">
+    <h2><span class="n">1</span>Hệ điều hành</h2>
+    <div class="seg" id="os"></div>
+  </div>
+  <div class="card">
+    <h2><span class="n">2</span>Nhóm đối tượng <span class="sum">(chọn nhiều được)</span></h2>
+    <div class="chips" id="groups"></div>
+    <div class="opts">
+      <label><input type="checkbox" id="optOpt"> Gồm phần tuỳ chọn</label>
+      <label><input type="checkbox" id="optPop"> Gồm phần mềm phổ biến (freeware / bản quyền)</label>
+    </div>
+  </div>
+  <div class="card">
+    <h2><span class="n">3</span>Phần mềm sẽ cài</h2>
+    <div class="tools">
+      <input type="search" id="q" placeholder="Tìm theo tên / mô tả…">
+      <button class="chip" id="expand">Mở hết</button>
+      <button class="chip" id="collapse">Gom gọn [-]</button>
+    </div>
+    <div id="list"></div>
+  </div>
+</div>
+<aside class="side">
+  <div class="card">
+    <h2><span class="n">4</span>Cách cài</h2>
+    <div class="seg" id="mode">
+      <button data-m="online" class="on">Tải rồi cài ngay</button>
+      <button data-m="offline">Tải offline trước</button>
+    </div>
+    <p class="note" id="modeNote"></p>
+    <p class="sum" id="sum"></p>
+    <button class="btn" id="dl">⬇ Tải script</button>
+    <button class="btn sec2" id="cp">Sao chép lệnh</button>
+    <pre id="pre"></pre>
+    <p class="note" id="how"></p>
+  </div>
+  <div class="card">
+    <h2>Muốn có giao diện đầy đủ?</h2>
+    <p class="note" style="margin-top:0">Bản ứng dụng <b>osetup.exe</b> (GUI) kiểm tra phần mềm đã cài để không cài trùng, tạo gói offline và chạy thẳng. Tải ở mục <b>Actions → Artifacts</b> hoặc <b>Releases</b> của repo.</p>
+  </div>
+</aside>
+</main>
+<script>
+const DATA=__DATA__;
+const APPS=DATA.apps,PROF=DATA.profiles;
+const OSES={windows:"Windows",macos:"macOS",linux:"Linux"};
+const ua=navigator.userAgent;
+let os=/Mac/.test(ua)?"macos":/Linux|X11/.test(ua)&&!/Android/.test(ua)?"linux":"windows";
+let mode="online";
+const sel=new Set();     // nhóm đã chọn
+const off=new Set();     // ứng dụng bị bỏ tick
+const closed=new Set();  // mục gom gọn
+const $=id=>document.getElementById(id);
+const BASE=["base","runtimes"];
+const groupIds=Object.keys(PROF).filter(k=>!BASE.includes(k));
+
+function act(a){
+  if(a.kind==="selfhost")return null;
+  if(os==="windows"&&a.winget)return{m:"winget",p:a.winget};
+  if(os==="macos"){if(a.cask)return{m:"cask",p:a.cask};if(a.brew)return{m:"brew",p:a.brew};}
+  if(os==="linux"){if(a.apt)return{m:"apt",p:a.apt};if(a.flatpak)return{m:"flatpak",p:a.flatpak};}
+  const u=a.manual&&a.manual[os];
+  if(u)return{m:"manual",p:u};
+  return null;
+}
+function ids(p,key){return (PROF[p]&&PROF[p][key])||[];}
+function uniq(a){return [...new Set(a)];}
+function candidates(){
+  const gs=[...sel];
+  const withOpt=$("optOpt").checked,withPop=$("optPop").checked;
+  const pick=k=>uniq([].concat(...[...BASE,...gs].map(p=>ids(p,k))));
+  let core=pick("core"),opt=withOpt?pick("optional"):[],pop=withPop?pick("popular"):[],sh=pick("selfhost");
+  // dữ liệu: runtimes
+  const all=uniq([...core,...opt,...pop]).filter(i=>APPS[i]);
+  const rows=all.map(i=>({id:i,a:APPS[i],ac:act(APPS[i])}))
+    .filter(r=>r.ac||!r.a.quiet);
+  const runtimes=rows.filter(r=>r.a.kind==="runtime");
+  const rest=rows.filter(r=>r.a.kind!=="runtime");
+  return{
+    runtimes,
+    apps:rest.filter(r=>r.ac&&r.ac.m!=="manual"&&!r.a.popular),
+    pop:rest.filter(r=>r.ac&&r.ac.m!=="manual"&&r.a.popular),
+    manual:rest.filter(r=>r.ac&&r.ac.m==="manual"),
+    na:rest.filter(r=>!r.ac),
+    selfhost:sh.filter(i=>APPS[i]).map(i=>({id:i,a:APPS[i]}))
+  };
+}
+function match(r,q){return !q||(r.a.name+" "+(r.a.desc||"")+" "+r.id).toLowerCase().includes(q);}
+
+function renderOS(){
+  $("os").innerHTML=Object.entries(OSES).map(([k,v])=>`<button data-o="${k}" class="${k===os?"on":""}">${v}</button>`).join("");
+  $("os").onclick=e=>{const o=e.target.dataset.o;if(o){os=o;render();}};
+}
+function renderGroups(){
+  const allOn=groupIds.every(g=>sel.has(g));
+  $("groups").innerHTML=`<button class="chip ${allOn?"on":""}" data-g="*">★ Tất cả các nhóm</button>`+
+    groupIds.map(g=>`<button class="chip ${sel.has(g)?"on":""}" data-g="${g}" title="${PROF[g].desc||""}">${PROF[g].name}</button>`).join("");
+  $("groups").onclick=e=>{
+    const g=e.target.closest("[data-g]");if(!g)return;const k=g.dataset.g;
+    if(k==="*"){const all=groupIds.every(x=>sel.has(x));groupIds.forEach(x=>all?sel.delete(x):sel.add(x));}
+    else sel.has(k)?sel.delete(k):sel.add(k);
+    render();
+  };
+}
+function section(key,title,rows,tagFn,q){
+  rows=rows.filter(r=>match(r,q));
+  if(!rows.length)return"";
+  const isClosed=closed.has(key);
+  const on=rows.filter(r=>!off.has(r.id)&&r.ac&&r.ac.m!=="manual").length;
+  let h=`<div class="sec"><button data-s="${key}"><span>${isClosed?"[+]":"[-]"}</span>${title}<span class="cnt">(${rows.length})</span><span class="tg" data-t="${key}">${rows.every(r=>!off.has(r.id))?"bỏ hết":"chọn hết"}</span></button>`;
+  if(!isClosed)h+=rows.map(r=>{
+    const dis=!r.ac;
+    const ck=!dis&&!off.has(r.id)?"checked":"";
+    return `<label class="row ${dis?"dis":""}"><input type="checkbox" data-id="${r.id}" ${ck} ${dis?"disabled":""}><span><b>${r.a.name}</b>${tagFn(r)}<div class="d">${r.a.desc||""}${r.a.license?` · <i>${r.a.license}</i>`:""}</div></span><span class="pkg">${r.ac?(r.ac.m==="manual"?"mở trang tải":r.ac.m+":"+r.ac.p):"không có trên "+OSES[os]}</span></label>`;
+  }).join("");
+  return h+"</div>";
+}
+function renderList(){
+  const c=candidates(),q=$("q").value.trim().toLowerCase();
+  const tag=r=>r.ac&&r.ac.m==="manual"?`<span class="tag m">manual</span>`:r.ac?`<span class="tag">${r.ac.m}</span>`:"";
+  let h="";
+  h+=section("rt","MÔI TRƯỜNG (runtime / SDK)",c.runtimes,tag,q);
+  h+=section("app","PHẦN MỀM (mã nguồn mở / miễn phí)",c.apps,tag,q);
+  h+=section("pop","PHỔ BIẾN (freeware / bản quyền)",c.pop,r=>`<span class="tag g">popular</span>`+tag(r),q);
+  h+=section("man","TẢI & CÀI TAY / CỔNG WEB (osetup mở trang tải)",c.manual,tag,q);
+  h+=section("na","KHÔNG CÓ TRÊN "+OSES[os].toUpperCase(),c.na,tag,q);
+  if(c.selfhost.length){
+    h+=`<div class="sec"><button data-s="sh"><span>${closed.has("sh")?"[+]":"[-]"}</span>GỢI Ý TỰ TRIỂN KHAI (self-host, chỉ link)<span class="cnt">(${c.selfhost.length})</span></button>`;
+    if(!closed.has("sh"))h+=c.selfhost.map(r=>`<div class="row"><span></span><span><b>${r.a.name}</b><span class="tag">self-host</span><div class="d">${r.a.desc||""}</div></span><a class="pkg" href="${r.a.url}" target="_blank" rel="noopener">mở ↗</a></div>`).join("");
+    h+="</div>";
+  }
+  $("list").innerHTML=h||`<div class="empty">Chọn nhóm ở bước 2 — phần Môi trường/Phần mềm cơ sở luôn có sẵn.</div>`;
+}
+$("list").onclick=e=>{
+  const t=e.target.closest("[data-t]");
+  if(t){e.preventDefault();e.stopPropagation();
+    const c=candidates();const m={rt:c.runtimes,app:c.apps,pop:c.pop};const rows=m[t.dataset.t]||[];
+    const allOn=rows.every(r=>!off.has(r.id));rows.forEach(r=>allOn?off.add(r.id):off.delete(r.id));render();return;}
+  const s=e.target.closest("[data-s]");
+  if(s){closed.has(s.dataset.s)?closed.delete(s.dataset.s):closed.add(s.dataset.s);renderList();return;}
+  const cb=e.target.closest("[data-id]");
+  if(cb){cb.checked?off.delete(cb.dataset.id):off.add(cb.dataset.id);update();}
+};
+$("q").oninput=renderList;
+$("expand").onclick=()=>{closed.clear();renderList();};
+$("collapse").onclick=()=>{["rt","app","pop","man","na","sh"].forEach(k=>closed.add(k));renderList();};
+$("optOpt").onchange=$("optPop").onchange=render;
+$("mode").onclick=e=>{const m=e.target.dataset.m;if(!m)return;mode=m;
+  [...$("mode").children].forEach(b=>b.classList.toggle("on",b.dataset.m===m));update();};
+
+function chosen(){
+  const c=candidates();
+  const rows=[...c.runtimes,...c.apps,...c.pop,...c.manual].filter(r=>!off.has(r.id));
+  return{pk:rows.filter(r=>r.ac.m!=="manual"),mn:rows.filter(r=>r.ac.m==="manual")};
+}
+function build(){
+  const{pk,mn}=chosen();
+  const by=m=>pk.filter(r=>r.ac.m===m).map(r=>r.ac.p);
+  const L=[];
+  if(os==="windows"){
+    L.push("@echo off","chcp 65001 >nul","setlocal enabledelayedexpansion",
+      "net session >nul 2>&1 || (echo Hay chay file nay bang Run as administrator & pause & exit /b 1)",
+      "where winget >nul 2>&1 || (echo Khong thay winget. Cai App Installer tu Microsoft Store roi chay lai. & pause & exit /b 1)","");
+    if(mode==="offline"){
+      L.push('set "PACK=%~dp0osetup-pack"','mkdir "%PACK%" 2>nul','echo === TAI OFFLINE vao %PACK% ===');
+      by("winget").forEach(p=>L.push(`winget download --id ${p} -e -d "%PACK%\\${p}" --accept-package-agreements --accept-source-agreements`));
+      L.push("","echo Xong. Copy thu muc osetup-pack sang may dich, vao tung thu muc va chay file cai dat (hoac dung osetup.exe -> offline-install).");
+    }else{
+      by("winget").forEach(p=>L.push(`winget list --id ${p} -e >nul 2>&1 && (echo [da co] ${p}) || (echo [cai] ${p} & winget install --id ${p} -e --silent --accept-package-agreements --accept-source-agreements)`));
+    }
+    if(mn.length){L.push("","echo === Phan mem can tai va cai tay (mo trang tai) ===");mn.forEach(r=>L.push(`start "" "${r.ac.p}"`));}
+    L.push("","echo Hoan tat.","pause");
+    return{name:mode==="offline"?"osetup-download.bat":"osetup-install.bat",text:L.join("\r\n")};
+  }
+  L.push("#!/usr/bin/env bash","set -u");
+  if(os==="macos"){
+    L.push('command -v brew >/dev/null || { echo "Can Homebrew: https://brew.sh"; exit 1; }');
+    by("brew").forEach(p=>L.push(`brew list --formula ${p} >/dev/null 2>&1 && echo "[da co] ${p}" || brew install ${p}`));
+    by("cask").forEach(p=>L.push(`brew list --cask ${p} >/dev/null 2>&1 && echo "[da co] ${p}" || brew install --cask ${p}`));
+  }else{
+    const a=by("apt");
+    if(a.length)L.push("sudo apt-get update",`sudo apt-get install -y ${a.join(" ")}`);
+    const f=by("flatpak");
+    if(f.length)L.push('command -v flatpak >/dev/null || sudo apt-get install -y flatpak',"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo",...f.map(p=>`flatpak install -y --noninteractive flathub ${p}`));
+  }
+  if(mn.length){L.push("","echo '=== Tai va cai tay ==='",...mn.map(r=>`echo "${r.a.name}: ${r.ac.p}"`));}
+  L.push('echo "Hoan tat."');
+  return{name:"osetup-install.sh",text:L.join("\n")+"\n"};
+}
+function update(){
+  const{pk,mn}=chosen();const s=build();
+  $("sum").innerHTML=`Đã chọn <b>${pk.length}</b> gói cài tự động`+(mn.length?` + <b>${mn.length}</b> mục tải/cài tay`:"")+` · ${OSES[os]}`;
+  $("modeNote").textContent=mode==="online"?"Chạy script: kiểm tra từng gói đã có chưa, chưa có thì tải & cài.":os==="windows"?"Chạy script ở máy có mạng: tải bộ cài của từng gói vào thư mục osetup-pack để mang đi cài máy khác.":"Chế độ offline chỉ hỗ trợ Windows (winget download). Trên hệ này script sẽ cài trực tiếp.";
+  $("pre").textContent=pk.length||mn.length?s.text.replace(/\r/g,""):"(chưa chọn gì)";
+  $("how").textContent=os==="windows"?"Tải file .bat → chuột phải → Run as administrator.":"Tải file .sh → chạy: bash "+s.name;
+  $("dl").disabled=!(pk.length||mn.length);
+}
+$("dl").onclick=()=>{const s=build();const b=new Blob([s.text],{type:"text/plain;charset=utf-8"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=s.name;a.click();URL.revokeObjectURL(a.href);};
+$("cp").onclick=async()=>{try{await navigator.clipboard.writeText(build().text.replace(/\r/g,""));$("cp").textContent="Đã sao chép ✓";setTimeout(()=>$("cp").textContent="Sao chép lệnh",1500);}catch(e){}};
+function render(){renderOS();renderGroups();renderList();update();}
+render();
+</script>
+</body>
+</html>
