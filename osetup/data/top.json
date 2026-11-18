@@ -1,11 +1,11 @@
 {
  "selfhost": {
   "label": "Self-hosted — tất cả",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "awesome-selfhosted/awesome-selfhosted",
-    "stars": 338241,
+    "stars": 338244,
     "desc": "A list of Free Software network services and web applications which can be hosted on your own servers",
     "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
     "license": "NOASSERTION",
@@ -14,7 +14,7 @@
    },
    {
     "full_name": "n8n-io/n8n",
-    "stars": 210835,
+    "stars": 210841,
     "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "url": "https://github.com/n8n-io/n8n",
     "license": "NOASSERTION",
@@ -32,7 +32,7 @@
    },
    {
     "full_name": "immich-app/immich",
-    "stars": 119528,
+    "stars": 119531,
     "desc": "High performance self-hosted photo and video management solution.",
     "url": "https://github.com/immich-app/immich",
     "license": "AGPL-3.0",
@@ -41,7 +41,7 @@
    },
    {
     "full_name": "Stirling-Tools/Stirling-PDF",
-    "stars": 96913,
+    "stars": 96914,
     "desc": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "license": "NOASSERTION",
@@ -50,7 +50,7 @@
    },
    {
     "full_name": "louislam/uptime-kuma",
-    "stars": 94588,
+    "stars": 94589,
     "desc": "A fancy self-hosted monitoring tool",
     "url": "https://github.com/louislam/uptime-kuma",
     "license": "MIT",
@@ -59,7 +59,7 @@
    },
    {
     "full_name": "unslothai/unsloth",
-    "stars": 79724,
+    "stars": 79725,
     "desc": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
     "url": "https://github.com/unslothai/unsloth",
     "license": "Apache-2.0",
@@ -95,7 +95,7 @@
    },
    {
     "full_name": "pathwaycom/serviette",
-    "stars": 58704,
+    "stars": 58703,
     "desc": "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.",
     "url": "https://github.com/pathwaycom/serviette",
     "license": "MIT",
@@ -104,7 +104,7 @@
    },
    {
     "full_name": "appwrite/appwrite",
-    "stars": 58120,
+    "stars": 58122,
     "desc": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
     "url": "https://github.com/appwrite/appwrite",
     "license": "BSD-3-Clause",
@@ -167,7 +167,7 @@
    },
    {
     "full_name": "janhq/jan",
-    "stars": 45793,
+    "stars": 45792,
     "desc": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
     "url": "https://github.com/janhq/jan",
     "license": "NOASSERTION",
@@ -176,7 +176,7 @@
    },
    {
     "full_name": "appsmithorg/appsmith",
-    "stars": 41269,
+    "stars": 41270,
     "desc": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
     "url": "https://github.com/appsmithorg/appsmith",
     "license": "Apache-2.0",
@@ -187,7 +187,7 @@
  },
  "crm": {
   "label": "CRM / chăm sóc khách hàng",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "twentyhq/twenty",
@@ -373,7 +373,7 @@
  },
  "erp": {
   "label": "ERP",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "odoo/odoo",
@@ -559,7 +559,7 @@
  },
  "accounting": {
   "label": "Kế toán / hoá đơn",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "frappe/erpnext",
@@ -745,11 +745,11 @@
  },
  "pm": {
   "label": "Quản lý dự án / Kanban",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "paperclipai/paperclip",
-    "stars": 114689,
+    "stars": 114693,
     "desc": "The open-source app everyone uses to manage agents at work",
     "url": "https://github.com/paperclipai/paperclip",
     "license": "MIT",
@@ -758,7 +758,7 @@
    },
    {
     "full_name": "AppFlowy-IO/AppFlowy",
-    "stars": 79127,
+    "stars": 79128,
     "desc": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
     "url": "https://github.com/AppFlowy-IO/AppFlowy",
     "license": "AGPL-3.0",
@@ -767,7 +767,7 @@
    },
    {
     "full_name": "makeplane/plane",
-    "stars": 62677,
+    "stars": 62678,
     "desc": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
     "url": "https://github.com/makeplane/plane",
     "license": "AGPL-3.0",
@@ -794,7 +794,7 @@
    },
    {
     "full_name": "mattermost-community/focalboard",
-    "stars": 26558,
+    "stars": 26557,
     "desc": "Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.",
     "url": "https://github.com/mattermost-community/focalboard",
     "license": "NOASSERTION",
@@ -866,7 +866,7 @@
    },
    {
     "full_name": "automazeio/ccpm",
-    "stars": 8453,
+    "stars": 8454,
     "desc": "Project management skill system for Agents that uses GitHub Issues and Git worktrees for parallel agent execution.",
     "url": "https://github.com/automazeio/ccpm",
     "license": "MIT",
@@ -875,7 +875,7 @@
    },
    {
     "full_name": "AhmadHassan-BTed/Jantt",
-    "stars": 6230,
+    "stars": 6231,
     "desc": "The AI-native JSON Gantt chart engine. Dependency-free interactive timelines with React, script-tag, CLI, topological DAG solver, and formal JSON schema.",
     "url": "https://github.com/AhmadHassan-BTed/Jantt",
     "license": "MIT",
@@ -931,11 +931,11 @@
  },
  "wiki": {
   "label": "Wiki / ghi chú / tài liệu",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "AppFlowy-IO/AppFlowy",
-    "stars": 79127,
+    "stars": 79128,
     "desc": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
     "url": "https://github.com/AppFlowy-IO/AppFlowy",
     "license": "AGPL-3.0",
@@ -944,7 +944,7 @@
    },
    {
     "full_name": "toeverything/AFFiNE",
-    "stars": 74632,
+    "stars": 74631,
     "desc": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
     "url": "https://github.com/toeverything/AFFiNE",
     "license": "NOASSERTION",
@@ -971,7 +971,7 @@
    },
    {
     "full_name": "Tencent/WeKnora",
-    "stars": 37729,
+    "stars": 37730,
     "desc": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
     "url": "https://github.com/Tencent/WeKnora",
     "license": "NOASSERTION",
@@ -998,7 +998,7 @@
    },
    {
     "full_name": "docmost/docmost",
-    "stars": 22372,
+    "stars": 22371,
     "desc": "Docmost is an open-source collaborative wiki and documentation software. It is an open-source alternative to Confluence and Notion.",
     "url": "https://github.com/docmost/docmost",
     "license": "AGPL-3.0",
@@ -1034,7 +1034,7 @@
    },
    {
     "full_name": "iamgio/quarkdown",
-    "stars": 16397,
+    "stars": 16396,
     "desc": "🪐 Markdown with superpowers: from ideas to papers, presentations, websites, books, and knowledge bases.",
     "url": "https://github.com/iamgio/quarkdown",
     "license": "GPL-3.0",
@@ -1117,7 +1117,7 @@
  },
  "bi": {
   "label": "Phân tích / BI / dashboard",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "grafana/grafana",
@@ -1175,7 +1175,7 @@
    },
    {
     "full_name": "cube-js/cube",
-    "stars": 21247,
+    "stars": 21248,
     "desc": "📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics",
     "url": "https://github.com/cube-js/cube",
     "license": "NOASSERTION",
@@ -1303,11 +1303,11 @@
  },
  "chat": {
   "label": "Chat / họp / cộng tác",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "khoj-ai/khoj",
-    "stars": 38168,
+    "stars": 38169,
     "desc": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
     "url": "https://github.com/khoj-ai/khoj",
     "license": "AGPL-3.0",
@@ -1489,11 +1489,11 @@
  },
  "automation": {
   "label": "Tự động hoá quy trình",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "n8n-io/n8n",
-    "stars": 210835,
+    "stars": 210841,
     "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "url": "https://github.com/n8n-io/n8n",
     "license": "NOASSERTION",
@@ -1502,7 +1502,7 @@
    },
    {
     "full_name": "appsmithorg/appsmith",
-    "stars": 41269,
+    "stars": 41270,
     "desc": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
     "url": "https://github.com/appsmithorg/appsmith",
     "license": "Apache-2.0",
@@ -1538,7 +1538,7 @@
    },
    {
     "full_name": "aden-hive/hive",
-    "stars": 11168,
+    "stars": 11169,
     "desc": "Multi-Agent Harness for Production AI",
     "url": "https://github.com/aden-hive/hive",
     "license": "Apache-2.0",
@@ -1646,7 +1646,7 @@
    },
    {
     "full_name": "n8n-io/nod",
-    "stars": 2425,
+    "stars": 2426,
     "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
     "url": "https://github.com/n8n-io/nod",
     "license": "Apache-2.0",
@@ -1675,7 +1675,7 @@
  },
  "llm": {
   "label": "AI / LLM chạy cục bộ",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "open-webui/open-webui",
@@ -1688,7 +1688,7 @@
    },
    {
     "full_name": "unslothai/unsloth",
-    "stars": 79724,
+    "stars": 79725,
     "desc": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
     "url": "https://github.com/unslothai/unsloth",
     "license": "Apache-2.0",
@@ -1697,7 +1697,7 @@
    },
    {
     "full_name": "pathwaycom/serviette",
-    "stars": 58704,
+    "stars": 58703,
     "desc": "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.",
     "url": "https://github.com/pathwaycom/serviette",
     "license": "MIT",
@@ -1706,7 +1706,7 @@
    },
    {
     "full_name": "janhq/jan",
-    "stars": 45793,
+    "stars": 45792,
     "desc": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
     "url": "https://github.com/janhq/jan",
     "license": "NOASSERTION",
@@ -1715,7 +1715,7 @@
    },
    {
     "full_name": "khoj-ai/khoj",
-    "stars": 38168,
+    "stars": 38169,
     "desc": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
     "url": "https://github.com/khoj-ai/khoj",
     "license": "AGPL-3.0",
@@ -1778,7 +1778,7 @@
    },
    {
     "full_name": "KKKKhazix/AIHOT",
-    "stars": 10967,
+    "stars": 10968,
     "desc": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
     "url": "https://github.com/KKKKhazix/AIHOT",
     "license": "MIT",
@@ -1814,7 +1814,7 @@
    },
    {
     "full_name": "elie222/rakazo",
-    "stars": 9088,
+    "stars": 9089,
     "desc": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
     "url": "https://github.com/elie222/rakazo",
     "license": "Apache-2.0",
@@ -1861,7 +1861,7 @@
  },
  "password": {
   "label": "Quản lý mật khẩu",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "keepassxreboot/keepassxc",
@@ -2027,7 +2027,7 @@
    },
    {
     "full_name": "Lifeforge-app/lifeforge",
-    "stars": 1731,
+    "stars": 1730,
     "desc": "A self-hosted solution to streamline and organize all aspects of your life.",
     "url": "https://github.com/Lifeforge-app/lifeforge",
     "license": "NOASSERTION",
@@ -2047,7 +2047,7 @@
  },
  "photos": {
   "label": "Ảnh / media / phát phim",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "mediacms-io/mediacms",
@@ -2233,11 +2233,11 @@
  },
  "monitoring": {
   "label": "Giám sát / DevOps",
-  "updated": "2026-11-18 11:59 UTC",
+  "updated": "2026-11-18 12:06 UTC",
   "items": [
    {
     "full_name": "louislam/uptime-kuma",
-    "stars": 94588,
+    "stars": 94589,
     "desc": "A fancy self-hosted monitoring tool",
     "url": "https://github.com/louislam/uptime-kuma",
     "license": "MIT",
@@ -2386,7 +2386,7 @@
     "url": "https://github.com/MacRimi/ProxMenux",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-17"
+    "updated": "2026-11-18"
    },
    {
     "full_name": "milesmcc/shynet",
