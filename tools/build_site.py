@@ -15,6 +15,8 @@ apps, profiles = core.load_data()
 data = {
     "apps": {k: {f: v[f] for f in KEEP if f in v} for k, v in apps.items()},
     "profiles": profiles,
+    "legend": core.LEGEND,
+    "presets": {k: [v[0], v[1]] for k, v in core.DISCOVER_PRESETS.items()},
 }
 html = (ROOT / "tools" / "site_template.html").read_text(encoding="utf-8")
 html = html.replace("__DATA__", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
