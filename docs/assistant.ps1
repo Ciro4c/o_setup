@@ -2,7 +2,7 @@
 # Go: Settings > Apps > "osetup - Tro ly cai phan mem" (hoac nut "Go tro ly" tren trang web).
 $ErrorActionPreference = "Stop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$repo = if ($env:OSETUP_REPO) { $env:OSETUP_REPO } else { "Ciro4c/o_setup-phan_mem_ban_dau-" }
+$repo = if ($env:OSETUP_REPO) { $env:OSETUP_REPO } else { "Ciro4c/o_setup" }
 $root = Join-Path $env:LOCALAPPDATA "osetup-assistant"
 $app  = Join-Path $root "app"
 

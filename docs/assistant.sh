@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # osetup — cài TRỢ LÝ chạy ngầm (Linux/macOS). Gỡ: python3 ~/.osetup-assistant/app/osetup_main.py assistant uninstall
 set -e
-REPO="${OSETUP_REPO:-Ciro4c/o_setup-phan_mem_ban_dau-}"
+REPO="${OSETUP_REPO:-Ciro4c/o_setup}"
 ROOT="$HOME/.osetup-assistant/app"
 command -v python3 >/dev/null || { echo "Cần Python 3."; exit 1; }
 curl -s -X POST http://127.0.0.1:47890/uninstall-stop -d '{}' >/dev/null 2>&1 || true
