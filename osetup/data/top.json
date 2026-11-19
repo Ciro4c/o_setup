@@ -1,7 +1,7 @@
 {
  "selfhost": {
   "label": "Self-hosted — tất cả",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "awesome-selfhosted/awesome-selfhosted",
@@ -14,7 +14,7 @@
    },
    {
     "full_name": "n8n-io/n8n",
-    "stars": 211105,
+    "stars": 211113,
     "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "url": "https://github.com/n8n-io/n8n",
     "license": "NOASSERTION",
@@ -23,7 +23,7 @@
    },
    {
     "full_name": "open-webui/open-webui",
-    "stars": 159049,
+    "stars": 159050,
     "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "url": "https://github.com/open-webui/open-webui",
     "license": "NOASSERTION",
@@ -41,7 +41,7 @@
    },
    {
     "full_name": "Stirling-Tools/Stirling-PDF",
-    "stars": 96960,
+    "stars": 96959,
     "desc": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "license": "NOASSERTION",
@@ -50,7 +50,7 @@
    },
    {
     "full_name": "louislam/uptime-kuma",
-    "stars": 94612,
+    "stars": 94613,
     "desc": "A fancy self-hosted monitoring tool",
     "url": "https://github.com/louislam/uptime-kuma",
     "license": "MIT",
@@ -104,7 +104,7 @@
    },
    {
     "full_name": "appwrite/appwrite",
-    "stars": 58242,
+    "stars": 58244,
     "desc": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
     "url": "https://github.com/appwrite/appwrite",
     "license": "BSD-3-Clause",
@@ -187,7 +187,7 @@
  },
  "crm": {
   "label": "CRM / chăm sóc khách hàng",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "twentyhq/twenty",
@@ -326,7 +326,7 @@
    },
    {
     "full_name": "Volmarg/personal-management-system",
-    "stars": 4196,
+    "stars": 4195,
     "desc": "Your web application for managing personal data.",
     "url": "https://github.com/Volmarg/personal-management-system",
     "license": "MIT",
@@ -373,11 +373,11 @@
  },
  "erp": {
   "label": "ERP",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "odoo/odoo",
-    "stars": 55914,
+    "stars": 55915,
     "desc": "Odoo. Open Source Apps To Grow Your Business.",
     "url": "https://github.com/odoo/odoo",
     "license": "NOASSERTION",
@@ -559,7 +559,7 @@
  },
  "accounting": {
   "label": "Kế toán / hoá đơn",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "frappe/erpnext",
@@ -745,11 +745,11 @@
  },
  "pm": {
   "label": "Quản lý dự án / Kanban",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "paperclipai/paperclip",
-    "stars": 114819,
+    "stars": 114820,
     "desc": "The open-source app everyone uses to manage agents at work",
     "url": "https://github.com/paperclipai/paperclip",
     "license": "MIT",
@@ -767,7 +767,7 @@
    },
    {
     "full_name": "makeplane/plane",
-    "stars": 62727,
+    "stars": 62728,
     "desc": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
     "url": "https://github.com/makeplane/plane",
     "license": "AGPL-3.0",
@@ -931,7 +931,7 @@
  },
  "wiki": {
   "label": "Wiki / ghi chú / tài liệu",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "AppFlowy-IO/AppFlowy",
@@ -944,7 +944,7 @@
    },
    {
     "full_name": "toeverything/AFFiNE",
-    "stars": 74712,
+    "stars": 74714,
     "desc": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
     "url": "https://github.com/toeverything/AFFiNE",
     "license": "NOASSERTION",
@@ -1117,7 +1117,7 @@
  },
  "bi": {
   "label": "Phân tích / BI / dashboard",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "grafana/grafana",
@@ -1303,7 +1303,7 @@
  },
  "chat": {
   "label": "Chat / họp / cộng tác",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "khoj-ai/khoj",
@@ -1489,11 +1489,11 @@
  },
  "automation": {
   "label": "Tự động hoá quy trình",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "n8n-io/n8n",
-    "stars": 211106,
+    "stars": 211114,
     "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "url": "https://github.com/n8n-io/n8n",
     "license": "NOASSERTION",
@@ -1538,7 +1538,7 @@
    },
    {
     "full_name": "aden-hive/hive",
-    "stars": 11169,
+    "stars": 11168,
     "desc": "Multi-Agent Harness for Production AI",
     "url": "https://github.com/aden-hive/hive",
     "license": "Apache-2.0",
@@ -1675,11 +1675,11 @@
  },
  "llm": {
   "label": "AI / LLM chạy cục bộ",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "open-webui/open-webui",
-    "stars": 159049,
+    "stars": 159050,
     "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "url": "https://github.com/open-webui/open-webui",
     "license": "NOASSERTION",
@@ -1778,7 +1778,7 @@
    },
    {
     "full_name": "KKKKhazix/AIHOT",
-    "stars": 10998,
+    "stars": 10999,
     "desc": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
     "url": "https://github.com/KKKKhazix/AIHOT",
     "license": "MIT",
@@ -1814,7 +1814,7 @@
    },
    {
     "full_name": "elie222/rakazo",
-    "stars": 9145,
+    "stars": 9146,
     "desc": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
     "url": "https://github.com/elie222/rakazo",
     "license": "Apache-2.0",
@@ -1861,7 +1861,7 @@
  },
  "password": {
   "label": "Quản lý mật khẩu",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "keepassxreboot/keepassxc",
@@ -1937,7 +1937,7 @@
    },
    {
     "full_name": "Volmarg/personal-management-system",
-    "stars": 4196,
+    "stars": 4195,
     "desc": "Your web application for managing personal data.",
     "url": "https://github.com/Volmarg/personal-management-system",
     "license": "MIT",
@@ -2047,7 +2047,7 @@
  },
  "photos": {
   "label": "Ảnh / media / phát phim",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "mediacms-io/mediacms",
@@ -2233,7 +2233,7 @@
  },
  "monitoring": {
   "label": "Giám sát / DevOps",
-  "updated": "2026-11-19 01:51 UTC",
+  "updated": "2026-11-19 01:57 UTC",
   "items": [
    {
     "full_name": "louislam/uptime-kuma",
