@@ -3,6 +3,7 @@
 set -e
 REPO="${OSETUP_REPO:-__REPO__}"
 ROOT="$HOME/.osetup-assistant/app"
+[ "$REPO" = "OWNER/REPO" ] && { echo "Chua biet repo. Dat: OSETUP_REPO=ten-chu/ten-repo"; exit 1; }
 command -v python3 >/dev/null || { echo "Cần Python 3."; exit 1; }
 curl -s -X POST http://127.0.0.1:47890/uninstall-stop -d '{}' >/dev/null 2>&1 || true
 sleep 1; rm -rf "$ROOT"; mkdir -p "$ROOT"

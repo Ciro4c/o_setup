@@ -2,8 +2,9 @@
 # osetup — cài nhanh 1 dòng lệnh (Linux/macOS):
 #   curl -fsSL https://<user>.github.io/<repo>/install.sh | OSETUP_ARGS='install student -y' bash
 set -e
-REPO="${OSETUP_REPO:-Ciro4c/o_setup-phan_mem_ban_dau-}"
+REPO="${OSETUP_REPO:-Ciro4c/o_setup}"
 DIR="${HOME}/.osetup/app"
+[ "$REPO" = "OWNER/REPO" ] && { echo "Chua biet repo. Dat: OSETUP_REPO=ten-chu/ten-repo"; exit 1; }
 command -v python3 >/dev/null || { echo "Cần Python 3. Linux: sudo apt-get install -y python3 | macOS: brew install python"; exit 1; }
 rm -rf "$DIR"; mkdir -p "$DIR"
 echo "Đang tải osetup từ github.com/$REPO ..."

@@ -3,8 +3,10 @@
 # Khong dat OSETUP_ARGS thi mo giao dien do hoa (gui). Them -n de chay thu, khong cai gi.
 $ErrorActionPreference = "Stop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$repo = if ($env:OSETUP_REPO) { $env:OSETUP_REPO } else { "Ciro4c/o_setup-phan_mem_ban_dau-" }
+$repo = if ($env:OSETUP_REPO) { $env:OSETUP_REPO } else { "Ciro4c/o_setup" }
 $dir  = Join-Path $env:LOCALAPPDATA "osetup"
+
+if ($repo -eq "OWNER/REPO") { throw "Chua biet repo. Dat truoc: $env:OSETUP_REPO='ten-chu/ten-repo'" }
 
 function Get-Repo([string]$dest) {
     $urls = @(

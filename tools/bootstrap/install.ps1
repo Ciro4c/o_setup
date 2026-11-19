@@ -6,6 +6,8 @@ $ErrorActionPreference = "Stop"
 $repo = if ($env:OSETUP_REPO) { $env:OSETUP_REPO } else { "__REPO__" }
 $dir  = Join-Path $env:LOCALAPPDATA "osetup"
 
+if ($repo -eq "OWNER/REPO") { throw "Chua biet repo. Dat truoc: $env:OSETUP_REPO='ten-chu/ten-repo'" }
+
 function Get-Repo([string]$dest) {
     $urls = @(
         "https://github.com/$repo/archive/HEAD.zip",

@@ -451,6 +451,15 @@ $("dl").onclick=()=>{const s=build();const a=document.createElement("a");a.href=
 $("cp").onclick=async()=>{try{await navigator.clipboard.writeText(build().text.replace(/\r/g,""));$("cp").textContent="Đã sao chép ✓";setTimeout(()=>$("cp").textContent="Sao chép lệnh",1500);}catch(e){}};
 function baseUrl(){return /^https?:/.test(location.protocol)?location.href.replace(/[#?].*$/,"").replace(/[^/]*$/,""):DATA.default_base;}
 const isWeb=()=>/^https?:/.test(location.protocol);
+/* repo owner/name theo địa chỉ trang đang mở (github.io) — không phụ thuộc giá trị lúc dựng trang */
+function repoSlug(){
+  const h=location.hostname;
+  if(isWeb()&&h.endsWith(".github.io")){
+    const owner=h.split(".")[0],seg=location.pathname.split("/")[1];
+    return seg&&!seg.includes(".")?owner+"/"+seg:owner+"/"+h;
+  }
+  return DATA.repo;
+}
 function quick(){
   const c=candidates();
   const rows=[...c.runtimes,...c.apps,...c.pop,...c.manual].filter(r=>r.ac&&r.ac.m!=="manual");
@@ -465,10 +474,10 @@ function quick(){
   const args=a.join(" "),b=baseUrl();
   if(os==="windows"){
     $("qiHow").textContent="Mở PowerShell bằng Run as administrator, dán dòng sau:";
-    return `$env:OSETUP_ARGS='${args}'; irm ${b}install.ps1 | iex`;
+    return `$env:OSETUP_REPO='${repoSlug()}'; $env:OSETUP_ARGS='${args}'; irm ${b}install.ps1 | iex`;
   }
   $("qiHow").textContent="Mở Terminal, dán dòng sau:";
-  return `curl -fsSL ${b}install.sh | OSETUP_ARGS='${args}' bash`;
+  return `curl -fsSL ${b}install.sh | OSETUP_REPO='${repoSlug()}' OSETUP_ARGS='${args}' bash`;
 }
 function renderQuick(){$("qiCmd").textContent=quick();}
 $("qiDry").onchange=renderQuick;
@@ -512,18 +521,18 @@ $("asGo").onclick=async()=>{
 function asRender(){
   const b=baseUrl();
   if(os==="windows"){
-    $("asCmd").textContent=(isWeb()?`$env:OSETUP_ORIGIN='${location.origin}'; `:"")+`irm ${b}assistant.ps1 | iex`;
+    $("asCmd").textContent=`$env:OSETUP_REPO='${repoSlug()}'; `+(isWeb()?`$env:OSETUP_ORIGIN='${location.origin}'; `:"")+`irm ${b}assistant.ps1 | iex`;
     $("asUn").textContent="Gỡ: Settings → Apps → Installed apps → “osetup — Trợ lý cài phần mềm” → Uninstall; hoặc bấm “Gỡ trợ lý” ở đây khi đang kết nối.";
   }else{
-    $("asCmd").textContent=`curl -fsSL ${b}assistant.sh | `+(isWeb()?`OSETUP_ORIGIN='${location.origin}' `:"")+`bash`;
+    $("asCmd").textContent=`curl -fsSL ${b}assistant.sh | OSETUP_REPO='${repoSlug()}' `+(isWeb()?`OSETUP_ORIGIN='${location.origin}' `:"")+`bash`;
     $("asUn").textContent="Gỡ: python3 ~/.osetup-assistant/app/osetup_main.py assistant uninstall (hoặc nút “Gỡ trợ lý” khi đang kết nối).";
   }
 }
 $("asCopy").onclick=async()=>{try{await navigator.clipboard.writeText($("asCmd").textContent);$("asCopy").textContent="Đã chép ✓";setTimeout(()=>$("asCopy").textContent="Chép",1500);}catch(e){}};
 $("asDl").onclick=()=>{
   const b=baseUrl(),w=os==="windows";
-  const text=w?`@echo off\r\nchcp 65001 >nul\r\necho Dang cai tro ly osetup...\r\npowershell -NoProfile -ExecutionPolicy Bypass -Command "${isWeb()?"$env:OSETUP_ORIGIN='"+location.origin+"'; ":""}irm ${b}assistant.ps1 | iex"\r\npause\r\n`
-    :`#!/usr/bin/env bash\ncurl -fsSL ${b}assistant.sh | ${isWeb()?"OSETUP_ORIGIN='"+location.origin+"' ":""}bash\n`;
+  const text=w?`@echo off\r\nchcp 65001 >nul\r\necho Dang cai tro ly osetup...\r\npowershell -NoProfile -ExecutionPolicy Bypass -Command "$env:OSETUP_REPO='${repoSlug()}'; ${isWeb()?"$env:OSETUP_ORIGIN='"+location.origin+"'; ":""}irm ${b}assistant.ps1 | iex"\r\npause\r\n`
+    :`#!/usr/bin/env bash\ncurl -fsSL ${b}assistant.sh | OSETUP_REPO='${repoSlug()}' ${isWeb()?"OSETUP_ORIGIN='"+location.origin+"' ":""}bash\n`;
   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:"text/plain;charset=utf-8"}));
   a.download=w?"osetup-assistant-setup.bat":"osetup-assistant-setup.sh";a.click();URL.revokeObjectURL(a.href);
 };

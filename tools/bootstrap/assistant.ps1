@@ -6,6 +6,8 @@ $repo = if ($env:OSETUP_REPO) { $env:OSETUP_REPO } else { "__REPO__" }
 $root = Join-Path $env:LOCALAPPDATA "osetup-assistant"
 $app  = Join-Path $root "app"
 
+if ($repo -eq "OWNER/REPO") { throw "Chua biet repo. Dat truoc: $env:OSETUP_REPO='ten-chu/ten-repo'" }
+
 function Get-Repo([string]$dest) {
     # HEAD = nhanh mac dinh, khong phu thuoc ten nhanh. Thu lan luot cac dia chi.
     $urls = @(

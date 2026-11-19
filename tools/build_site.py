@@ -21,11 +21,13 @@ def detect_repo() -> str:
             r = f"{m.group(1)}/{m.group(2)}" if m else ""
         except OSError:
             r = ""
-    return r or "Ciro4c/o_setup-phan_mem_ban_dau-"
+    return r or "OWNER/REPO"
 
 
 REPO = detect_repo()
 OWNER, NAME = REPO.split("/", 1)
+if REPO == "OWNER/REPO":
+    print("! Không đọc được tên repo (không có git remote origin / GITHUB_REPOSITORY).")
 BASE = f"https://{OWNER.lower()}.github.io/" + ("" if NAME.lower() == f"{OWNER.lower()}.github.io" else NAME + "/")
 
 KEEP = ("name", "desc", "license", "repo", "winget", "brew", "cask", "apt", "flatpak",
