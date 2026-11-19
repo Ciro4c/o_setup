@@ -149,4 +149,4 @@ python tools/build_site.py
 
 ## Trợ lý chạy ngầm
 
-`osetup assistant install | run | status | uninstall` — tiến trình nhỏ nghe ở `127.0.0.1:47890`, chạy ngầm (Windows: `pythonw` + Task Scheduler, có mục gỡ trong *Installed apps*). Trang web nói chuyện với nó để dò máy và cài ngay. Chỉ chấp nhận request từ các origin trong `~/.osetup/assistant.json` (mặc định `https://ciro4c.github.io`, `localhost`) và chỉ nhận id có trong danh mục.
+`osetup assistant install | run | status | uninstall` — tiến trình nhỏ nghe ở `127.0.0.1:47890`, chạy ngầm (Windows: `pythonw` + Task Scheduler, có mục gỡ trong *Installed apps*). Trang web nói chuyện với nó để dò máy và cài ngay. Chỉ chấp nhận request từ các origin trong `~/.osetup/assistant.json` (mặc định chỉ `localhost`; thêm bằng `--origin` lúc cài — lệnh cài trên trang web tự thêm địa chỉ trang đó) và chỉ nhận id có trong danh mục.

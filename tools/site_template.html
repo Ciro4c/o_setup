@@ -61,6 +61,10 @@ details summary{cursor:pointer;font-weight:600}
 </style>
 </head>
 <body>
+<div id="fileBanner" hidden style="background:#fef3c7;color:#92400e;padding:10px 20px;text-align:center;font-size:14px">
+  ⚠ Bạn đang mở file <b>index.html</b> lưu trong máy (thư mục Downloads…). Trợ lý chỉ nhận lệnh từ trang web chính thức, nên cài sẽ không chạy.
+  Hãy mở: <a id="fileLink" target="_blank" rel="noopener"></a>
+</div>
 <header>
   <h1>osetup</h1>
   <p>Chọn nhóm người dùng → tick phần mềm → tải script cài đặt một lần cho cả máy. Ưu tiên mã nguồn mở / repo nhiều sao.</p>
@@ -446,6 +450,7 @@ function update(){
 $("dl").onclick=()=>{const s=build();const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([s.text],{type:"text/plain;charset=utf-8"}));a.download=s.name;a.click();URL.revokeObjectURL(a.href);};
 $("cp").onclick=async()=>{try{await navigator.clipboard.writeText(build().text.replace(/\r/g,""));$("cp").textContent="Đã sao chép ✓";setTimeout(()=>$("cp").textContent="Sao chép lệnh",1500);}catch(e){}};
 function baseUrl(){return /^https?:/.test(location.protocol)?location.href.replace(/[#?].*$/,"").replace(/[^/]*$/,""):DATA.default_base;}
+const isWeb=()=>/^https?:/.test(location.protocol);
 function quick(){
   const c=candidates();
   const rows=[...c.runtimes,...c.apps,...c.pop,...c.manual].filter(r=>r.ac&&r.ac.m!=="manual");
@@ -475,7 +480,8 @@ async function asFetch(path,opt){const r=await fetch(AS+path,Object.assign({cach
 async function asPing(){
   let info=null;try{info=await asFetch("/status");}catch(e){}
   const was=asOn;asOn=!!(info&&info.assistant);
-  $("asDot").textContent=asOn?"● đang chạy":"○ chưa cài";$("asDot").className="tag "+(asOn?"i":"m");
+  const blocked=!!(info&&info.error);
+  $("asDot").textContent=asOn?"● đang chạy":blocked?"⚠ trợ lý chưa cho phép địa chỉ trang này — chạy lại lệnh cài từ chính trang này":"○ chưa cài";$("asDot").className="tag "+(asOn?"i":"m");
   $("asOff").hidden=asOn;$("asOn").hidden=!asOn;
   if(asOn){$("asInfo").textContent=`Trợ lý v${info.version} · ${info.os} · ${info.managers.join("/")||"chưa có trình quản lý gói"}`;if(!was)asScan();}
 }
@@ -506,22 +512,23 @@ $("asGo").onclick=async()=>{
 function asRender(){
   const b=baseUrl();
   if(os==="windows"){
-    $("asCmd").textContent=`irm ${b}assistant.ps1 | iex`;
+    $("asCmd").textContent=(isWeb()?`$env:OSETUP_ORIGIN='${location.origin}'; `:"")+`irm ${b}assistant.ps1 | iex`;
     $("asUn").textContent="Gỡ: Settings → Apps → Installed apps → “osetup — Trợ lý cài phần mềm” → Uninstall; hoặc bấm “Gỡ trợ lý” ở đây khi đang kết nối.";
   }else{
-    $("asCmd").textContent=`curl -fsSL ${b}assistant.sh | bash`;
+    $("asCmd").textContent=`curl -fsSL ${b}assistant.sh | `+(isWeb()?`OSETUP_ORIGIN='${location.origin}' `:"")+`bash`;
     $("asUn").textContent="Gỡ: python3 ~/.osetup-assistant/app/osetup_main.py assistant uninstall (hoặc nút “Gỡ trợ lý” khi đang kết nối).";
   }
 }
 $("asCopy").onclick=async()=>{try{await navigator.clipboard.writeText($("asCmd").textContent);$("asCopy").textContent="Đã chép ✓";setTimeout(()=>$("asCopy").textContent="Chép",1500);}catch(e){}};
 $("asDl").onclick=()=>{
   const b=baseUrl(),w=os==="windows";
-  const text=w?`@echo off\r\nchcp 65001 >nul\r\necho Dang cai tro ly osetup...\r\npowershell -NoProfile -ExecutionPolicy Bypass -Command "irm ${b}assistant.ps1 | iex"\r\npause\r\n`
-    :`#!/usr/bin/env bash\ncurl -fsSL ${b}assistant.sh | bash\n`;
+  const text=w?`@echo off\r\nchcp 65001 >nul\r\necho Dang cai tro ly osetup...\r\npowershell -NoProfile -ExecutionPolicy Bypass -Command "${isWeb()?"$env:OSETUP_ORIGIN='"+location.origin+"'; ":""}irm ${b}assistant.ps1 | iex"\r\npause\r\n`
+    :`#!/usr/bin/env bash\ncurl -fsSL ${b}assistant.sh | ${isWeb()?"OSETUP_ORIGIN='"+location.origin+"' ":""}bash\n`;
   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:"text/plain;charset=utf-8"}));
   a.download=w?"osetup-assistant-setup.bat":"osetup-assistant-setup.sh";a.click();URL.revokeObjectURL(a.href);
 };
 function render(){asRender();renderOS();renderGroups();renderList();renderDet();update();}
+if(location.protocol==="file:"){$("fileBanner").hidden=false;$("fileLink").textContent=$("fileLink").href=DATA.default_base;}
 render();showStored();asPing();setInterval(asPing,6000);
 </script>
 </body>

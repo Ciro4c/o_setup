@@ -299,13 +299,14 @@ def main(argv=None) -> int:
     s.add_argument("profiles", nargs="*")
     s = sub.add_parser("assistant", help="trợ lý chạy ngầm (cho trang web điều khiển): install | run | status | uninstall")
     s.add_argument("action", choices=["install", "run", "status", "uninstall"])
+    s.add_argument("--origin", action="append", default=[], help="địa chỉ trang web được phép điều khiển trợ lý (vd https://user.github.io); lặp được")
     sub.add_parser("gui", help="mở giao diện đồ hoạ")
     sub.add_parser("menu", help="menu văn bản tương tác")
 
     args = p.parse_args(argv)
     if getattr(args, "cmd", None) == "assistant":
         from . import assistant
-        return assistant.main(args.action)
+        return assistant.main(args.action, args.origin)
     try:
         apps, profiles = core.load_data(args.profile_file)
         env = core.detect_env(args.target)

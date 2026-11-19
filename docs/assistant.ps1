@@ -2,7 +2,7 @@
 # Go: Settings > Apps > "osetup - Tro ly cai phan mem" (hoac nut "Go tro ly" tren trang web).
 $ErrorActionPreference = "Stop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$repo = "Ciro4c/o_setup-phan_mem_ban_dau-"
+$repo = if ($env:OSETUP_REPO) { $env:OSETUP_REPO } else { "Ciro4c/o_setup-phan_mem_ban_dau-" }
 $root = Join-Path $env:LOCALAPPDATA "osetup-assistant"
 $app  = Join-Path $root "app"
 
@@ -48,5 +48,9 @@ if (Test-Path $app) { Remove-Item $app -Recurse -Force }
 New-Item -ItemType Directory -Path $root -Force | Out-Null
 Move-Item $src.FullName $app
 Remove-Item $zip, $tmp -Recurse -Force -ErrorAction SilentlyContinue
-python (Join-Path $app "osetup_main.py") assistant install
+# cho phep trang web (noi ban bam nut cai) dieu khien tro ly: origin trang + github.io cua repo
+$origins = @("https://" + $repo.Split("/")[0].ToLower() + ".github.io")
+if ($env:OSETUP_ORIGIN) { $origins += $env:OSETUP_ORIGIN }
+$oa = @(); foreach ($o in $origins) { $oa += @("--origin", $o) }
+python (Join-Path $app "osetup_main.py") assistant install @oa
 Write-Host "Xong. Quay lai trang web: trang thai se hien 'Tro ly dang chay'."

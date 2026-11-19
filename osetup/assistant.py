@@ -27,7 +27,7 @@ PORT = 47890
 HOME = Path.home() / ".osetup"
 CONF = HOME / "assistant.json"
 LOG = HOME / "assistant.log"
-DEFAULT_ORIGINS = ["https://ciro4c.github.io", "http://localhost", "http://127.0.0.1"]
+DEFAULT_ORIGINS = ["http://localhost", "http://127.0.0.1"]  # + các origin được thêm lúc cài (--origin)
 TASK = "osetup-assistant"
 UNINST_KEY = r"HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\osetup-assistant"
 NOWIN = getattr(subprocess, "CREATE_NO_WINDOW", 0)
@@ -216,10 +216,11 @@ def _q(parts: list[str]) -> str:
     return " ".join(f'"{p}"' if " " in p else p for p in parts)
 
 
-def install() -> int:
+def install(origins: list[str] | None = None) -> int:
     HOME.mkdir(parents=True, exist_ok=True)
-    if not CONF.exists():
-        CONF.write_text(json.dumps({"origins": DEFAULT_ORIGINS}, indent=1), encoding="utf-8")
+    merged = list(dict.fromkeys(DEFAULT_ORIGINS + allowed_origins() + [o.rstrip("/") for o in (origins or []) if o]))
+    CONF.write_text(json.dumps({"origins": merged}, indent=1), encoding="utf-8")
+    print("Trang web được phép điều khiển trợ lý:", ", ".join(merged))
     cmd = _launcher()
     sysname = platform.system()
     if sysname == "Windows":
@@ -299,5 +300,7 @@ def status() -> int:
         return 1
 
 
-def main(action: str) -> int:
-    return {"run": run, "install": install, "uninstall": uninstall, "status": status}[action]()
+def main(action: str, origins: list[str] | None = None) -> int:
+    if action == "install":
+        return install(origins)
+    return {"run": run, "uninstall": uninstall, "status": status}[action]()

@@ -278,10 +278,15 @@ class AssistantTests(unittest.TestCase):
     def test_origin_rules(self):
         from osetup import assistant as a
         self.assertTrue(a.origin_ok(None))
-        self.assertTrue(a.origin_ok("https://ciro4c.github.io"))
         self.assertTrue(a.origin_ok("http://localhost:8123"))
         self.assertFalse(a.origin_ok("https://evil.example"))
-        self.assertFalse(a.origin_ok("https://ciro4c.github.io.evil.example"))
+        old = a.allowed_origins
+        a.allowed_origins = lambda: a.DEFAULT_ORIGINS + ["https://me.github.io"]
+        try:
+            self.assertTrue(a.origin_ok("https://me.github.io"))
+            self.assertFalse(a.origin_ok("https://me.github.io.evil.example"))
+        finally:
+            a.allowed_origins = old
 
     def test_install_rejects_unknown_ids(self):
         from osetup import assistant as a
