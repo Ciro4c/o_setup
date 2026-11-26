@@ -1,29 +1,29 @@
 {
  "selfhost": {
   "label": "Self-hosted — tất cả",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "awesome-selfhosted/awesome-selfhosted",
-    "stars": 340243,
+    "stars": 340534,
     "desc": "A list of Free Software network services and web applications which can be hosted on your own servers",
     "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
     "license": "NOASSERTION",
     "language": "",
-    "updated": "2026-11-22"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "n8n-io/n8n",
-    "stars": 212051,
+    "stars": 212162,
     "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "url": "https://github.com/n8n-io/n8n",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "open-webui/open-webui",
-    "stars": 159467,
+    "stars": 159580,
     "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "url": "https://github.com/open-webui/open-webui",
     "license": "NOASSERTION",
@@ -32,79 +32,79 @@
    },
    {
     "full_name": "immich-app/immich",
-    "stars": 120045,
+    "stars": 120134,
     "desc": "High performance self-hosted photo and video management solution.",
     "url": "https://github.com/immich-app/immich",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "Stirling-Tools/Stirling-PDF",
-    "stars": 97406,
+    "stars": 97478,
     "desc": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "louislam/uptime-kuma",
-    "stars": 94844,
+    "stars": 94903,
     "desc": "A fancy self-hosted monitoring tool",
     "url": "https://github.com/louislam/uptime-kuma",
     "license": "MIT",
     "language": "JavaScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "netdata/netdata",
-    "stars": 81619,
+    "stars": 81648,
     "desc": "Full-stack observability · Metrics · Logs · Traces · Flows · Topology · Infrastructure · APM · NPM · DBM · RUM · Synthetics · Cloud · AI SRE · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Redfish · 2000+ integrations",
     "url": "https://github.com/netdata/netdata",
     "license": "GPL-3.0",
     "language": "Go",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "unslothai/unsloth",
-    "stars": 80198,
+    "stars": 80266,
     "desc": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
     "url": "https://github.com/unslothai/unsloth",
     "license": "Apache-2.0",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "coollabsio/coolify",
-    "stars": 66445,
+    "stars": 66471,
     "desc": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
     "url": "https://github.com/coollabsio/coolify",
     "license": "Apache-2.0",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "usememos/memos",
-    "stars": 64684,
+    "stars": 64698,
     "desc": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
     "url": "https://github.com/usememos/memos",
     "license": "MIT",
     "language": "Go",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "go-gitea/gitea",
-    "stars": 59245,
+    "stars": 59264,
     "desc": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
     "url": "https://github.com/go-gitea/gitea",
     "license": "MIT",
     "language": "Go",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "pathwaycom/serviette",
-    "stars": 58675,
+    "stars": 58677,
     "desc": "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.",
     "url": "https://github.com/pathwaycom/serviette",
     "license": "MIT",
@@ -113,43 +113,43 @@
    },
    {
     "full_name": "appwrite/appwrite",
-    "stars": 58599,
+    "stars": 58643,
     "desc": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
     "url": "https://github.com/appwrite/appwrite",
     "license": "BSD-3-Clause",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "QuantumNous/new-api",
-    "stars": 52492,
+    "stars": 52553,
     "desc": "Open-source AI gateway. Self-hosted LLM gateway with OpenAI-, Claude- and Gemini-compatible APIs, model routing, access control, usage tracking and cost accounting.",
     "url": "https://github.com/QuantumNous/new-api",
     "license": "AGPL-3.0",
     "language": "Go",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "ClickHouse/ClickHouse",
-    "stars": 51115,
+    "stars": 51144,
     "desc": "ClickHouse® is a real-time analytics database management system",
     "url": "https://github.com/ClickHouse/ClickHouse",
     "license": "Apache-2.0",
     "language": "C++",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "HKUDS/nanobot",
-    "stars": 50305,
+    "stars": 50338,
     "desc": "Your lightweight open-source personal agent.",
     "url": "https://github.com/HKUDS/nanobot",
     "license": "MIT",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "gogs/gogs",
-    "stars": 47994,
+    "stars": 48001,
     "desc": "The painless way to host your own Git service",
     "url": "https://github.com/gogs/gogs",
     "license": "MIT",
@@ -158,16 +158,16 @@
    },
    {
     "full_name": "siyuan-note/siyuan",
-    "stars": 47375,
+    "stars": 47396,
     "desc": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
     "url": "https://github.com/siyuan-note/siyuan",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "janhq/jan",
-    "stars": 46095,
+    "stars": 46153,
     "desc": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
     "url": "https://github.com/janhq/jan",
     "license": "NOASSERTION",
@@ -176,7 +176,7 @@
    },
    {
     "full_name": "reactive-resume/reactive-resume",
-    "stars": 46073,
+    "stars": 46114,
     "desc": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
     "url": "https://github.com/reactive-resume/reactive-resume",
     "license": "MIT",
@@ -187,29 +187,29 @@
  },
  "crm": {
   "label": "CRM / chăm sóc khách hàng",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "twentyhq/twenty",
-    "stars": 61445,
+    "stars": 61481,
     "desc": "The open alternative to Salesforce, designed for AI.",
     "url": "https://github.com/twentyhq/twenty",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "frappe/erpnext",
-    "stars": 41614,
+    "stars": 41638,
     "desc": "Free and Open Source Enterprise Resource Planning (ERP)",
     "url": "https://github.com/frappe/erpnext",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "hcengineering/platform",
-    "stars": 28185,
+    "stars": 28203,
     "desc": "Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)",
     "url": "https://github.com/hcengineering/platform",
     "license": "EPL-2.0",
@@ -218,25 +218,25 @@
    },
    {
     "full_name": "monicahq/monica",
-    "stars": 25831,
+    "stars": 25841,
     "desc": "Personal CRM and backend for your agents. Remember everything about your friends, family and business relationships.",
     "url": "https://github.com/monicahq/monica",
     "license": "AGPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "nocobase/nocobase",
-    "stars": 25002,
+    "stars": 25012,
     "desc": "NocoBase is the open-source platform for building, running, and evolving business systems with AI. Agents write the code and do the work, NocoBase provides the foundation and governance, and people make the decisions.",
     "url": "https://github.com/nocobase/nocobase",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "krayin/laravel-crm",
-    "stars": 24205,
+    "stars": 24213,
     "desc": "Krayin CRM is Free & Open Source CRM Built with Laravel for Customer, Lead, and Sales Management.",
     "url": "https://github.com/krayin/laravel-crm",
     "license": "MIT",
@@ -245,7 +245,7 @@
    },
    {
     "full_name": "aureuserp/aureuserp",
-    "stars": 12289,
+    "stars": 12296,
     "desc": "Free and Open Source ERP software",
     "url": "https://github.com/aureuserp/aureuserp",
     "license": "MIT",
@@ -254,16 +254,16 @@
    },
    {
     "full_name": "akaunting/akaunting",
-    "stars": 10340,
+    "stars": 10343,
     "desc": "Online Accounting Software",
     "url": "https://github.com/akaunting/akaunting",
     "license": "NOASSERTION",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "idurar/idurar-erp-crm",
-    "stars": 8967,
+    "stars": 8968,
     "desc": "Free Open Source ERP CRM Software Accounting Invoicing | Node.Js React",
     "url": "https://github.com/idurar/idurar-erp-crm",
     "license": "AGPL-3.0",
@@ -272,7 +272,7 @@
    },
    {
     "full_name": "ever-co/ever-gauzy",
-    "stars": 8895,
+    "stars": 8903,
     "desc": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
     "url": "https://github.com/ever-co/ever-gauzy",
     "license": "AGPL-3.0",
@@ -281,21 +281,21 @@
    },
    {
     "full_name": "Dolibarr/dolibarr",
-    "stars": 7897,
+    "stars": 7901,
     "desc": "Dolibarr ERP CRM is a modern software package to manage your company or foundation's activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). it's an open source Web application (written in PHP) designed for businesses of any sizes, foundations and freelancers.",
     "url": "https://github.com/Dolibarr/dolibarr",
     "license": "GPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "macro-inc/macro",
-    "stars": 6474,
+    "stars": 6516,
     "desc": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
     "url": "https://github.com/macro-inc/macro",
     "license": "AGPL-3.0",
     "language": "Rust",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "openblocks-dev/openblocks",
@@ -308,7 +308,7 @@
    },
    {
     "full_name": "SuiteCRM/SuiteCRM",
-    "stars": 5877,
+    "stars": 5878,
     "desc": "SuiteCRM - Open source CRM for the world",
     "url": "https://github.com/SuiteCRM/SuiteCRM",
     "license": "AGPL-3.0",
@@ -317,12 +317,12 @@
    },
    {
     "full_name": "melgarafael/DeskcommCRM",
-    "stars": 5540,
+    "stars": 5556,
     "desc": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
     "url": "https://github.com/melgarafael/DeskcommCRM",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "Volmarg/personal-management-system",
@@ -335,34 +335,34 @@
    },
    {
     "full_name": "frappe/crm",
-    "stars": 4031,
+    "stars": 4038,
     "desc": "Fully featured, open source CRM",
     "url": "https://github.com/frappe/crm",
     "license": "AGPL-3.0",
     "language": "Vue",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "espocrm/espocrm",
-    "stars": 3665,
+    "stars": 3672,
     "desc": "EspoCRM – Open Source CRM Application",
     "url": "https://github.com/espocrm/espocrm",
     "license": "AGPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "InvoicePlane/InvoicePlane",
-    "stars": 3291,
+    "stars": 3292,
     "desc": "A self-hosted open source application for managing your invoices, clients and payments.",
     "url": "https://github.com/InvoicePlane/InvoicePlane",
     "license": "NOASSERTION",
     "language": "PHP",
-    "updated": "2026-11-23"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "ONLYOFFICE/CommunityServer",
-    "stars": 3185,
+    "stars": 3186,
     "desc": "Free open source office suite with business productivity tools: document and project management, CRM, mail aggregator.",
     "url": "https://github.com/ONLYOFFICE/CommunityServer",
     "license": "Apache-2.0",
@@ -373,38 +373,38 @@
  },
  "erp": {
   "label": "ERP",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "odoo/odoo",
-    "stars": 56079,
+    "stars": 56107,
     "desc": "Odoo. Open Source Apps To Grow Your Business.",
     "url": "https://github.com/odoo/odoo",
     "license": "NOASSERTION",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "frappe/erpnext",
-    "stars": 41614,
+    "stars": 41638,
     "desc": "Free and Open Source Enterprise Resource Planning (ERP)",
     "url": "https://github.com/frappe/erpnext",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "nocobase/nocobase",
-    "stars": 25002,
+    "stars": 25012,
     "desc": "NocoBase is the open-source platform for building, running, and evolving business systems with AI. Agents write the code and do the work, NocoBase provides the foundation and governance, and people make the decisions.",
     "url": "https://github.com/nocobase/nocobase",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "aureuserp/aureuserp",
-    "stars": 12289,
+    "stars": 12296,
     "desc": "Free and Open Source ERP software",
     "url": "https://github.com/aureuserp/aureuserp",
     "license": "MIT",
@@ -413,16 +413,16 @@
    },
    {
     "full_name": "akaunting/akaunting",
-    "stars": 10340,
+    "stars": 10343,
     "desc": "Online Accounting Software",
     "url": "https://github.com/akaunting/akaunting",
     "license": "NOASSERTION",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "grocy/grocy",
-    "stars": 9707,
+    "stars": 9710,
     "desc": "ERP beyond your fridge - Grocy is a web-based self-hosted groceries & household management solution for your home",
     "url": "https://github.com/grocy/grocy",
     "license": "MIT",
@@ -431,7 +431,7 @@
    },
    {
     "full_name": "idurar/idurar-erp-crm",
-    "stars": 8967,
+    "stars": 8968,
     "desc": "Free Open Source ERP CRM Software Accounting Invoicing | Node.Js React",
     "url": "https://github.com/idurar/idurar-erp-crm",
     "license": "AGPL-3.0",
@@ -440,7 +440,7 @@
    },
    {
     "full_name": "ever-co/ever-gauzy",
-    "stars": 8895,
+    "stars": 8903,
     "desc": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
     "url": "https://github.com/ever-co/ever-gauzy",
     "license": "AGPL-3.0",
@@ -449,16 +449,16 @@
    },
    {
     "full_name": "Dolibarr/dolibarr",
-    "stars": 7897,
+    "stars": 7901,
     "desc": "Dolibarr ERP CRM is a modern software package to manage your company or foundation's activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). it's an open source Web application (written in PHP) designed for businesses of any sizes, foundations and freelancers.",
     "url": "https://github.com/Dolibarr/dolibarr",
     "license": "GPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "jishenghua/jshERP",
-    "stars": 4732,
+    "stars": 4734,
     "desc": "管伊佳ERP（原名华夏ERP）基于SpringBoot框架和SaaS模式，立志为中小企业提供开源好用的ERP软件，目前专注进销存+财务功能。主要模块有零售管理、采购管理、销售管理、仓库管理、财务管理、报表查询、系统管理等。支持预付款、收入支出、仓库调拨、组装拆卸、订单等特色功能。拥有库存状况、出入库统计等报表。同时对角色和权限进行了细致全面控制，精确到每个按钮和菜单。",
     "url": "https://github.com/jishenghua/jshERP",
     "license": "Apache-2.0",
@@ -467,21 +467,21 @@
    },
    {
     "full_name": "crbnos/carbon",
-    "stars": 2861,
+    "stars": 2862,
     "desc": "Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema, with a REST API and MCP server. Self-host or use Carbon Cloud.",
     "url": "https://github.com/crbnos/carbon",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "frappe/frappe_docker",
-    "stars": 2639,
+    "stars": 2638,
     "desc": "Docker environment for developing, deploying, and running Frappe applications (ERPNext and custom apps) in production and development",
     "url": "https://github.com/frappe/frappe_docker",
     "license": "MIT",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "metasfresh/metasfresh",
@@ -490,20 +490,20 @@
     "url": "https://github.com/metasfresh/metasfresh",
     "license": "?",
     "language": "Java",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "open-mercato/open-mercato",
-    "stars": 1964,
+    "stars": 1966,
     "desc": "The AI-Engineering Foundation Framework for business apps: open-source TypeScript, with multi-tenancy, RBAC, events and domain modules already decided as conventions and specs, so Cursor, Claude Code and Codex build features instead of re-deciding architecture. Start with 80% done.",
     "url": "https://github.com/open-mercato/open-mercato",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "FJ-OMS/oms-erp",
-    "stars": 1933,
+    "stars": 1932,
     "desc": "一站式全渠道业务中台系统包括订单管理系统OMS/电商ERP、库存WMS统一管理系统和SAP财务管理系统等，实现快速部署，并帮助企业后续自主进行开发迭代，实现数字化转型，并有多个经典案例。中台系统包括：通用业务中台、强大的技术中台Springcloud/Istio、后续开发方案的设计，技术(K8S,SERVERLESS)及管理人员的培训等。",
     "url": "https://github.com/FJ-OMS/oms-erp",
     "license": "Apache-2.0",
@@ -521,12 +521,12 @@
    },
    {
     "full_name": "datadrivenconstruction/OpenConstructionERP",
-    "stars": 1492,
+    "stars": 1498,
     "desc": "Open-source construction ERP - BOQ, PDF/CAD/BIM takeoff, AI cost matching, 293 guided cases. 120,000+ priced positions, 44 languages, 190+ modules, cost data for 40+ markets. AGPL-3.0. pip install openconstructionerp",
     "url": "https://github.com/datadrivenconstruction/OpenConstructionERP",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "andrewdwallo/erpsaas",
@@ -548,40 +548,40 @@
    },
    {
     "full_name": "OCA/web",
-    "stars": 1249,
+    "stars": 1250,
     "desc": "Odoo web client UI related addons",
     "url": "https://github.com/OCA/web",
     "license": "AGPL-3.0",
     "language": "JavaScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    }
   ]
  },
  "accounting": {
   "label": "Kế toán / hoá đơn",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "frappe/erpnext",
-    "stars": 41614,
+    "stars": 41638,
     "desc": "Free and Open Source Enterprise Resource Planning (ERP)",
     "url": "https://github.com/frappe/erpnext",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "firefly-iii/firefly-iii",
-    "stars": 25336,
+    "stars": 25344,
     "desc": "Firefly III: a personal finances manager",
     "url": "https://github.com/firefly-iii/firefly-iii",
     "license": "AGPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "aureuserp/aureuserp",
-    "stars": 12289,
+    "stars": 12296,
     "desc": "Free and Open Source ERP software",
     "url": "https://github.com/aureuserp/aureuserp",
     "license": "MIT",
@@ -590,16 +590,16 @@
    },
    {
     "full_name": "akaunting/akaunting",
-    "stars": 10340,
+    "stars": 10343,
     "desc": "Online Accounting Software",
     "url": "https://github.com/akaunting/akaunting",
     "license": "NOASSERTION",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "idurar/idurar-erp-crm",
-    "stars": 8967,
+    "stars": 8968,
     "desc": "Free Open Source ERP CRM Software Accounting Invoicing | Node.Js React",
     "url": "https://github.com/idurar/idurar-erp-crm",
     "license": "AGPL-3.0",
@@ -608,7 +608,7 @@
    },
    {
     "full_name": "ever-co/ever-gauzy",
-    "stars": 8895,
+    "stars": 8903,
     "desc": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
     "url": "https://github.com/ever-co/ever-gauzy",
     "license": "AGPL-3.0",
@@ -617,16 +617,16 @@
    },
    {
     "full_name": "Dolibarr/dolibarr",
-    "stars": 7897,
+    "stars": 7901,
     "desc": "Dolibarr ERP CRM is a modern software package to manage your company or foundation's activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). it's an open source Web application (written in PHP) designed for businesses of any sizes, foundations and freelancers.",
     "url": "https://github.com/Dolibarr/dolibarr",
     "license": "GPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "vas3k/TaxHacker",
-    "stars": 6900,
+    "stars": 6908,
     "desc": "Self-hosted AI accounting app. LLM analyzer for receipts, invoices, transactions with custom prompts and categories",
     "url": "https://github.com/vas3k/TaxHacker",
     "license": "MIT",
@@ -635,12 +635,12 @@
    },
    {
     "full_name": "mayswind/ezbookkeeping",
-    "stars": 6132,
+    "stars": 6138,
     "desc": "ezBookkeeping is an open source, powerful, self-hosted personal finance app that is easy to use.",
     "url": "https://github.com/mayswind/ezbookkeeping",
     "license": "MIT",
     "language": "Go",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "ledger/ledger",
@@ -653,7 +653,7 @@
    },
    {
     "full_name": "3proxy/3proxy",
-    "stars": 5619,
+    "stars": 5622,
     "desc": "3proxy - tiny free proxy server",
     "url": "https://github.com/3proxy/3proxy",
     "license": "NOASSERTION",
@@ -671,12 +671,12 @@
    },
    {
     "full_name": "bigcapitalhq/bigcapital",
-    "stars": 4247,
+    "stars": 4254,
     "desc": "💵 Independent financial accounting with intelligent reporting, alternative to Quickbooks, Xero, Wave.",
     "url": "https://github.com/bigcapitalhq/bigcapital",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "rotki/rotki",
@@ -685,16 +685,16 @@
     "url": "https://github.com/rotki/rotki",
     "license": "AGPL-3.0",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "TNT-Likely/BeeCount",
-    "stars": 2885,
+    "stars": 2889,
     "desc": "Local-first bookkeeping for iOS/Android/Web · Self-hosted cloud + iCloud/WebDAV/S3 sync · AI capture · MCP | 本地优先的跨端记账 · 自建云 + iCloud/WebDAV/S3 同步 · AI 记账 · MCP",
     "url": "https://github.com/TNT-Likely/BeeCount",
     "license": "NOASSERTION",
     "language": "Dart",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "metasfresh/metasfresh",
@@ -703,7 +703,7 @@
     "url": "https://github.com/metasfresh/metasfresh",
     "license": "?",
     "language": "Java",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "panshak/accountill",
@@ -730,7 +730,7 @@
     "url": "https://github.com/arrobalytics/django-ledger",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "osbzr/gooderp_addons",
@@ -745,20 +745,20 @@
  },
  "pm": {
   "label": "Quản lý dự án / Kanban",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "paperclipai/paperclip",
-    "stars": 116791,
+    "stars": 117092,
     "desc": "The open-source app everyone uses to manage agents at work",
     "url": "https://github.com/paperclipai/paperclip",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "AppFlowy-IO/AppFlowy",
-    "stars": 79519,
+    "stars": 79565,
     "desc": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
     "url": "https://github.com/AppFlowy-IO/AppFlowy",
     "license": "AGPL-3.0",
@@ -767,25 +767,25 @@
    },
    {
     "full_name": "makeplane/plane",
-    "stars": 63115,
+    "stars": 63185,
     "desc": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
     "url": "https://github.com/makeplane/plane",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "frappe/erpnext",
-    "stars": 41614,
+    "stars": 41638,
     "desc": "Free and Open Source Enterprise Resource Planning (ERP)",
     "url": "https://github.com/frappe/erpnext",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "hcengineering/platform",
-    "stars": 28185,
+    "stars": 28203,
     "desc": "Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)",
     "url": "https://github.com/hcengineering/platform",
     "license": "EPL-2.0",
@@ -794,7 +794,7 @@
    },
    {
     "full_name": "mattermost-community/focalboard",
-    "stars": 26571,
+    "stars": 26576,
     "desc": "Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.",
     "url": "https://github.com/mattermost-community/focalboard",
     "license": "NOASSERTION",
@@ -803,16 +803,16 @@
    },
    {
     "full_name": "opf/openproject",
-    "stars": 17704,
+    "stars": 17747,
     "desc": "OpenProject is the leading open source project management software for product, project and portfolio management. A powerful Jira alternative with agile planning, issue tracking, roadmaps, Gantt charts, time tracking, collaboration features, and more. Available on premises or in the cloud. ⭐ Star us on GitHub",
     "url": "https://github.com/opf/openproject",
     "license": "GPL-3.0",
     "language": "Ruby",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "architecture-decision-record/architecture-decision-record",
-    "stars": 17517,
+    "stars": 17527,
     "desc": "Architecture decision record (ADR) examples for software planning, IT leadership, and template documentation",
     "url": "https://github.com/architecture-decision-record/architecture-decision-record",
     "license": "NOASSERTION",
@@ -821,7 +821,7 @@
    },
    {
     "full_name": "plankanban/planka",
-    "stars": 12710,
+    "stars": 12714,
     "desc": "Elegant open source project tracking. Self-hosted Kanban for teams — free Community edition, with PLANKA Pro for organisations.",
     "url": "https://github.com/plankanban/planka",
     "license": "NOASSERTION",
@@ -830,16 +830,16 @@
    },
    {
     "full_name": "Leantime/leantime",
-    "stars": 12143,
+    "stars": 12149,
     "desc": "Leantime is a goals focused project management system for non-project managers. Building with ADHD, Autism, and dyslexia in mind.",
     "url": "https://github.com/Leantime/leantime",
     "license": "AGPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "kanboard/kanboard",
-    "stars": 9976,
+    "stars": 9978,
     "desc": "Kanban project management software",
     "url": "https://github.com/kanboard/kanboard",
     "license": "MIT",
@@ -848,16 +848,16 @@
    },
    {
     "full_name": "usekaneo/kaneo",
-    "stars": 9890,
+    "stars": 9902,
     "desc": "⚡ Project management that doesn't become the project. Boards, Gantt charts, and GitHub integration. Self-host it or use Kaneo Cloud.",
     "url": "https://github.com/usekaneo/kaneo",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "ever-co/ever-gauzy",
-    "stars": 8895,
+    "stars": 8903,
     "desc": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
     "url": "https://github.com/ever-co/ever-gauzy",
     "license": "AGPL-3.0",
@@ -866,7 +866,7 @@
    },
    {
     "full_name": "automazeio/ccpm",
-    "stars": 8468,
+    "stars": 8473,
     "desc": "Project management skill system for Agents that uses GitHub Issues and Git worktrees for parallel agent execution.",
     "url": "https://github.com/automazeio/ccpm",
     "license": "MIT",
@@ -875,7 +875,7 @@
    },
    {
     "full_name": "AhmadHassan-BTed/Jantt",
-    "stars": 6242,
+    "stars": 6239,
     "desc": "Create interactive Gantt charts with AI : no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, React/Vue/Svelte/Python/MCP.",
     "url": "https://github.com/AhmadHassan-BTed/Jantt",
     "license": "MIT",
@@ -884,7 +884,7 @@
    },
    {
     "full_name": "go-vikunja/vikunja",
-    "stars": 6175,
+    "stars": 6177,
     "desc": "The task manager you actually own.",
     "url": "https://github.com/go-vikunja/vikunja",
     "license": "AGPL-3.0",
@@ -893,7 +893,7 @@
    },
    {
     "full_name": "kuaifan/dootask",
-    "stars": 5618,
+    "stars": 5617,
     "desc": "DooTask是一款开源在线项目任务管理工具，提供各类文档协作工具、在线思维导图、在线流程图、项目管理、任务分发、即时IM，文件管理等工具；同时消息功能使用非对称加密技术让你的沟通更安全。",
     "url": "https://github.com/kuaifan/dootask",
     "license": "AGPL-3.0",
@@ -902,7 +902,7 @@
    },
    {
     "full_name": "JordanKnott/taskcafe",
-    "stars": 5218,
+    "stars": 5217,
     "desc": "An open source project management tool with Kanban boards",
     "url": "https://github.com/JordanKnott/taskcafe",
     "license": "MIT",
@@ -920,7 +920,7 @@
    },
    {
     "full_name": "mark-when/markwhen",
-    "stars": 4881,
+    "stars": 4882,
     "desc": "Make a cascading timeline from markdown-like text. Supports simple American/European date styles, ISO8601, images, links, locations, and more.",
     "url": "https://github.com/mark-when/markwhen",
     "license": "MIT",
@@ -931,11 +931,11 @@
  },
  "wiki": {
   "label": "Wiki / ghi chú / tài liệu",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "AppFlowy-IO/AppFlowy",
-    "stars": 79519,
+    "stars": 79565,
     "desc": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
     "url": "https://github.com/AppFlowy-IO/AppFlowy",
     "license": "AGPL-3.0",
@@ -944,25 +944,25 @@
    },
    {
     "full_name": "toeverything/AFFiNE",
-    "stars": 78064,
+    "stars": 78557,
     "desc": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
     "url": "https://github.com/toeverything/AFFiNE",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "outline/outline",
-    "stars": 41373,
+    "stars": 41390,
     "desc": "The fastest knowledge base for growing teams. Beautiful, realtime collaborative, feature packed, and markdown compatible.",
     "url": "https://github.com/outline/outline",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "TriliumNext/Trilium",
-    "stars": 39076,
+    "stars": 39095,
     "desc": "Build your personal knowledge base with Trilium Notes",
     "url": "https://github.com/TriliumNext/Trilium",
     "license": "AGPL-3.0",
@@ -971,16 +971,16 @@
    },
    {
     "full_name": "Tencent/WeKnora",
-    "stars": 38163,
+    "stars": 38236,
     "desc": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
     "url": "https://github.com/Tencent/WeKnora",
     "license": "NOASSERTION",
     "language": "Go",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "requarks/wiki",
-    "stars": 29380,
+    "stars": 29394,
     "desc": "Wiki.js | Next Generation Open Source Wiki",
     "url": "https://github.com/requarks/wiki",
     "license": "AGPL-3.0",
@@ -989,7 +989,7 @@
    },
    {
     "full_name": "hcengineering/platform",
-    "stars": 28185,
+    "stars": 28203,
     "desc": "Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)",
     "url": "https://github.com/hcengineering/platform",
     "license": "EPL-2.0",
@@ -998,7 +998,7 @@
    },
    {
     "full_name": "docmost/docmost",
-    "stars": 22419,
+    "stars": 22427,
     "desc": "Docmost is an open-source collaborative wiki and documentation software. It is an open-source alternative to Confluence and Notion.",
     "url": "https://github.com/docmost/docmost",
     "license": "AGPL-3.0",
@@ -1007,16 +1007,16 @@
    },
    {
     "full_name": "BookStackApp/BookStack",
-    "stars": 19153,
+    "stars": 19154,
     "desc": "NOW MANAGED ON CODEBERG",
     "url": "https://github.com/BookStackApp/BookStack",
     "license": "MIT",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "AsyncFuncAI/deepwiki-open",
-    "stars": 18491,
+    "stars": 18502,
     "desc": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme",
     "url": "https://github.com/AsyncFuncAI/deepwiki-open",
     "license": "MIT",
@@ -1025,30 +1025,30 @@
    },
    {
     "full_name": "suitenumerique/docs",
-    "stars": 17009,
+    "stars": 17012,
     "desc": "Docs is an open-source text editor: web-native, made for real-time collaboration, cleanly structured documents and sub-documents with full ownership of your data. Built to scale with Django and React.",
     "url": "https://github.com/suitenumerique/docs",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "iamgio/quarkdown",
-    "stars": 16412,
+    "stars": 16418,
     "desc": "🪐 Markdown with superpowers: from ideas to papers, presentations, websites, books, and knowledge bases.",
     "url": "https://github.com/iamgio/quarkdown",
     "license": "GPL-3.0",
     "language": "Kotlin",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "haiwen/seafile",
-    "stars": 15491,
+    "stars": 15496,
     "desc": "Beyond file syncing and sharing, a new way to organize your files with extensible file properties and flexible views",
     "url": "https://github.com/haiwen/seafile",
     "license": "NOASSERTION",
     "language": "C",
-    "updated": "2026-11-11"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "theonedev/onedev",
@@ -1057,11 +1057,11 @@
     "url": "https://github.com/theonedev/onedev",
     "license": "MIT",
     "language": "Java",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "gollum/gollum",
-    "stars": 14354,
+    "stars": 14355,
     "desc": "A simple, Git-powered wiki with a local frontend and support for many kinds of markup and content.",
     "url": "https://github.com/gollum/gollum",
     "license": "MIT",
@@ -1070,7 +1070,7 @@
    },
    {
     "full_name": "chaitin/PandaWiki",
-    "stars": 10545,
+    "stars": 10564,
     "desc": "PandaWiki 是一款 AI 大模型驱动的开源知识库搭建系统，帮助你快速构建智能化的 产品文档、技术文档、FAQ、博客系统，借助大模型的力量为你提供 AI 创作、AI 问答、AI 搜索等能力。",
     "url": "https://github.com/chaitin/PandaWiki",
     "license": "AGPL-3.0",
@@ -1079,7 +1079,7 @@
    },
    {
     "full_name": "brightmart/nlp_chinese_corpus",
-    "stars": 9938,
+    "stars": 9939,
     "desc": "大规模中文自然语言处理语料  Large Scale Chinese Corpus for NLP",
     "url": "https://github.com/brightmart/nlp_chinese_corpus",
     "license": "MIT",
@@ -1088,7 +1088,7 @@
    },
    {
     "full_name": "ctf-wiki/ctf-wiki",
-    "stars": 9790,
+    "stars": 9792,
     "desc": "Come and join us, we need you!",
     "url": "https://github.com/ctf-wiki/ctf-wiki",
     "license": "NOASSERTION",
@@ -1097,7 +1097,7 @@
    },
    {
     "full_name": "vimwiki/vimwiki",
-    "stars": 9524,
+    "stars": 9523,
     "desc": "Personal Wiki for Vim",
     "url": "https://github.com/vimwiki/vimwiki",
     "license": "NOASSERTION",
@@ -1106,7 +1106,7 @@
    },
    {
     "full_name": "TiddlyWiki/TiddlyWiki5",
-    "stars": 8717,
+    "stars": 8719,
     "desc": "A self-contained JavaScript wiki for the browser, Node.js, AWS Lambda etc.",
     "url": "https://github.com/TiddlyWiki/TiddlyWiki5",
     "license": "NOASSERTION",
@@ -1117,83 +1117,83 @@
  },
  "bi": {
   "label": "Phân tích / BI / dashboard",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "grafana/grafana",
-    "stars": 78134,
+    "stars": 78192,
     "desc": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
     "url": "https://github.com/grafana/grafana",
     "license": "AGPL-3.0",
-    "language": "Go",
-    "updated": "2026-11-25"
+    "language": "TypeScript",
+    "updated": "2026-11-26"
    },
    {
     "full_name": "apache/superset",
-    "stars": 75666,
+    "stars": 75687,
     "desc": "Apache Superset is a Data Visualization and Data Exploration Platform",
     "url": "https://github.com/apache/superset",
     "license": "Apache-2.0",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "metabase/metabase",
-    "stars": 50509,
+    "stars": 50547,
     "desc": "The easy-to-use open source Business Intelligence and Embedded Analytics tool that lets everyone work with data :bar_chart:",
     "url": "https://github.com/metabase/metabase",
     "license": "NOASSERTION",
     "language": "Clojure",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "streamlit/streamlit",
-    "stars": 46497,
+    "stars": 46508,
     "desc": "Streamlit — The agent-native framework for data apps and dashboards.",
     "url": "https://github.com/streamlit/streamlit",
     "license": "Apache-2.0",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "getredash/redash",
-    "stars": 28901,
+    "stars": 28902,
     "desc": "Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data.",
     "url": "https://github.com/getredash/redash",
     "license": "BSD-2-Clause",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "dataease/dataease",
-    "stars": 24739,
+    "stars": 24745,
     "desc": "🔥 人人可用的开源 BI 工具，数据可视化神器。An open-source BI tool alternative to Tableau.",
     "url": "https://github.com/dataease/dataease",
     "license": "NOASSERTION",
     "language": "Java",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "cube-js/cube",
-    "stars": 21292,
+    "stars": 21295,
     "desc": "📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics",
     "url": "https://github.com/cube-js/cube",
     "license": "NOASSERTION",
     "language": "Rust",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "Canner/WrenAI",
-    "stars": 18388,
+    "stars": 18402,
     "desc": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.",
     "url": "https://github.com/Canner/WrenAI",
     "license": "NOASSERTION",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "virgili0/Virgilio",
-    "stars": 15013,
+    "stars": 15012,
     "desc": "Your new Mentor for Data Science E-Learning.",
     "url": "https://github.com/virgili0/Virgilio",
     "license": "NOASSERTION",
@@ -1202,7 +1202,7 @@
    },
    {
     "full_name": "dbt-labs/dbt",
-    "stars": 14211,
+    "stars": 14214,
     "desc": "dbt enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.",
     "url": "https://github.com/dbt-labs/dbt",
     "license": "Apache-2.0",
@@ -1211,7 +1211,7 @@
    },
    {
     "full_name": "perspective-dev/perspective",
-    "stars": 11765,
+    "stars": 11783,
     "desc": "A data visualization and analytics component, especially well-suited for large and/or streaming datasets.",
     "url": "https://github.com/perspective-dev/perspective",
     "license": "Apache-2.0",
@@ -1220,21 +1220,21 @@
    },
    {
     "full_name": "evidence-dev/evidence",
-    "stars": 7146,
+    "stars": 7147,
     "desc": "Business intelligence as code: build fast, interactive data visualizations in SQL and markdown",
     "url": "https://github.com/evidence-dev/evidence",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-23"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "lightdash/lightdash",
-    "stars": 6251,
+    "stars": 6253,
     "desc": "Agentic BI. Analytics at the speed of code ⚡️",
     "url": "https://github.com/lightdash/lightdash",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "openblocks-dev/openblocks",
@@ -1283,7 +1283,7 @@
    },
    {
     "full_name": "thenaturalist/awesome-business-intelligence",
-    "stars": 2340,
+    "stars": 2339,
     "desc": "Actively curated list of awesome BI tools. PRs welcome!",
     "url": "https://github.com/thenaturalist/awesome-business-intelligence",
     "license": "MIT",
@@ -1303,11 +1303,11 @@
  },
  "chat": {
   "label": "Chat / họp / cộng tác",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "khoj-ai/khoj",
-    "stars": 38235,
+    "stars": 38251,
     "desc": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
     "url": "https://github.com/khoj-ai/khoj",
     "license": "AGPL-3.0",
@@ -1316,7 +1316,7 @@
    },
    {
     "full_name": "owncast/owncast",
-    "stars": 11699,
+    "stars": 11704,
     "desc": "Take control over your live stream video by running it yourself.  Streaming + chat out of the box.",
     "url": "https://github.com/owncast/owncast",
     "license": "MIT",
@@ -1325,7 +1325,7 @@
    },
    {
     "full_name": "colanode/colanode",
-    "stars": 5229,
+    "stars": 5235,
     "desc": "Open-source and local-first Slack and Notion alternative that puts you in control of your data",
     "url": "https://github.com/colanode/colanode",
     "license": "Apache-2.0",
@@ -1334,7 +1334,7 @@
    },
    {
     "full_name": "juggleim/im-server",
-    "stars": 3546,
+    "stars": 3547,
     "desc": "IM Chat, High-performance, scalable, self-hosted instant messaging server in Go — private chat, groups, chatrooms, WebSocket and REST APIs.",
     "url": "https://github.com/juggleim/im-server",
     "license": "Apache-2.0",
@@ -1352,7 +1352,7 @@
    },
    {
     "full_name": "taoshihan1991/goflylivechat",
-    "stars": 2606,
+    "stars": 2607,
     "desc": "开源在线客服系统GO语言开发GO-FLY,免费在线客服系统/GOFLY LIVE CHAT: open source self-hosted private cloud customer support live chat software by golang",
     "url": "https://github.com/taoshihan1991/goflylivechat",
     "license": "Apache-2.0",
@@ -1361,7 +1361,7 @@
    },
    {
     "full_name": "cogwheel0/conduit",
-    "stars": 2511,
+    "stars": 2518,
     "desc": "Native iOS and Android client for Open WebUI, direct OpenAI-compatible, Ollama, and Hermes agents.",
     "url": "https://github.com/cogwheel0/conduit",
     "license": "GPL-3.0",
@@ -1384,20 +1384,20 @@
     "url": "https://github.com/OpenVidu/openvidu",
     "license": "Apache-2.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "agentes-chat/agentes-chat",
-    "stars": 2025,
+    "stars": 2053,
     "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
     "url": "https://github.com/agentes-chat/agentes-chat",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "agno-agi/agent-ui",
-    "stars": 1881,
+    "stars": 1880,
     "desc": "A modern chat interface for AI agents built with Next.js, Tailwind CSS, and TypeScript.",
     "url": "https://github.com/agno-agi/agent-ui",
     "license": "MIT",
@@ -1415,16 +1415,16 @@
    },
    {
     "full_name": "Sharkord/sharkord",
-    "stars": 1593,
+    "stars": 1597,
     "desc": "Lightweight, self-hosted, open-source chat server with voice, video, text, and screen sharing. Built for small groups who want privacy, simplicity, and full control over their data.",
     "url": "https://github.com/Sharkord/sharkord",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "aozorae/Edgechat",
-    "stars": 1472,
+    "stars": 1475,
     "desc": "完全运行于 Cloudflare Worker的现代聊天系统：实时通信、Telegram 双向桥接、消息与文件加密 A modern, self-hosted team chat built on Cloudflare — realtime messaging, Telegram bridge, encrypted messages & files, and WebMCP. |",
     "url": "https://github.com/aozorae/Edgechat",
     "license": "GPL-3.0",
@@ -1433,21 +1433,21 @@
    },
    {
     "full_name": "metadist/synaplan",
-    "stars": 1242,
+    "stars": 1244,
     "desc": "Own the flow: one open-source AI platform for your knowledge, models and channels – web, WhatsApp, email, Outlook, Nextcloud & ownCloud. Local and cloud models side by side, with the cost on every answer.",
     "url": "https://github.com/metadist/synaplan",
     "license": "Apache-2.0",
     "language": "PHP",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "ancsemi/Haven",
-    "stars": 1229,
+    "stars": 1239,
     "desc": "Self-hosted private chat: no cloud, no telemetry, no Big Tech. Discord alternative that runs on your own machine.",
     "url": "https://github.com/ancsemi/Haven",
     "license": "AGPL-3.0",
     "language": "JavaScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "Mininglamp-OSS/octo-server",
@@ -1489,29 +1489,29 @@
  },
  "automation": {
   "label": "Tự động hoá quy trình",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "n8n-io/n8n",
-    "stars": 212050,
+    "stars": 212162,
     "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "url": "https://github.com/n8n-io/n8n",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "appsmithorg/appsmith",
-    "stars": 41300,
+    "stars": 41307,
     "desc": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
     "url": "https://github.com/appsmithorg/appsmith",
     "license": "Apache-2.0",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "enescingoz/awesome-n8n-templates",
-    "stars": 26556,
+    "stars": 26575,
     "desc": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.",
     "url": "https://github.com/enescingoz/awesome-n8n-templates",
     "license": "NOASSERTION",
@@ -1520,16 +1520,16 @@
    },
    {
     "full_name": "getmaxun/maxun",
-    "stars": 18560,
+    "stars": 18563,
     "desc": "Turn any website into a structured API. Extract, automate, search and monitor the web.",
     "url": "https://github.com/getmaxun/maxun",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "automatisch/automatisch",
-    "stars": 14029,
+    "stars": 14031,
     "desc": "The open source Zapier alternative. Build workflow automation without spending time and money.",
     "url": "https://github.com/automatisch/automatisch",
     "license": "NOASSERTION",
@@ -1538,7 +1538,7 @@
    },
    {
     "full_name": "aden-hive/hive",
-    "stars": 11174,
+    "stars": 11180,
     "desc": "Multi-Agent Harness for Production AI",
     "url": "https://github.com/aden-hive/hive",
     "license": "Apache-2.0",
@@ -1547,7 +1547,7 @@
    },
    {
     "full_name": "certimate-go/certimate",
-    "stars": 9463,
+    "stars": 9466,
     "desc": "An open-source and free self-hosted SSL certificates ACME tool, automates the full-cycle of issuance, deployment, renewal, and monitoring visually. 完全开源免费的自托管 SSL 证书 ACME 工具，申请、部署、续期、监控全流程自动化可视化，支持各大主流云厂商。",
     "url": "https://github.com/certimate-go/certimate",
     "license": "MIT",
@@ -1556,7 +1556,7 @@
    },
    {
     "full_name": "crocodilestick/Calibre-Web-Automated",
-    "stars": 6663,
+    "stars": 6671,
     "desc": "Calibre-Web but Automated and with tons of New Features! Fully automate and simplify your eBook set up!",
     "url": "https://github.com/crocodilestick/Calibre-Web-Automated",
     "license": "GPL-3.0",
@@ -1565,25 +1565,25 @@
    },
    {
     "full_name": "KKKKhazix/agent-autoloop",
-    "stars": 6503,
+    "stars": 6574,
     "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
     "url": "https://github.com/KKKKhazix/agent-autoloop",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "oomol-lab/open-connector",
-    "stars": 6295,
+    "stars": 6301,
     "desc": "Open-source auth gateway connecting 1700+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
     "url": "https://github.com/oomol-lab/open-connector",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "darkzOGx/youtube-automation-agent",
-    "stars": 5363,
+    "stars": 5376,
     "desc": "🎬 Open-source, self-hosted AI agent that runs a YouTube channel end to end: researches topics, writes scripts, generates narration, visuals and video, optimizes SEO, and publishes after your approval, then learns from analytics. Works with Gemini, OpenAI, OpenRouter, DeepSeek and more.",
     "url": "https://github.com/darkzOGx/youtube-automation-agent",
     "license": "MIT",
@@ -1592,7 +1592,7 @@
    },
    {
     "full_name": "iflytek/astron-rpa",
-    "stars": 5240,
+    "stars": 5242,
     "desc": "Agent-ready RPA suite with out-of-the-box automation tools. Built for individuals and enterprises.",
     "url": "https://github.com/iflytek/astron-rpa",
     "license": "Apache-2.0",
@@ -1615,25 +1615,25 @@
     "url": "https://github.com/autobase-tech/autobase",
     "license": "MIT",
     "language": "Jinja",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "DaKheera47/job-ops",
-    "stars": 4211,
+    "stars": 4215,
     "desc": "job-ops: DevOps principles applied to job hunting. A self-hosted pipeline to track, analyze, and assist your application process",
     "url": "https://github.com/DaKheera47/job-ops",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-10-30"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "n8n-io/nod",
-    "stars": 3400,
+    "stars": 3607,
     "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
     "url": "https://github.com/n8n-io/nod",
     "license": "Apache-2.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "av/harbor",
@@ -1646,7 +1646,7 @@
    },
    {
     "full_name": "autobrr/autobrr",
-    "stars": 3229,
+    "stars": 3230,
     "desc": "Modern, easy to use download automation for torrents and usenet.",
     "url": "https://github.com/autobrr/autobrr",
     "license": "GPL-2.0",
@@ -1655,31 +1655,31 @@
    },
    {
     "full_name": "DialmasterOrg/Youtarr",
-    "stars": 1850,
+    "stars": 1853,
     "desc": "Self-hosted web app that automates downloading, organizing, and scheduling YouTube channel content with support for Plex, Kodi, Emby and Jellyfin",
     "url": "https://github.com/DialmasterOrg/Youtarr",
     "license": "ISC",
     "language": "JavaScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "heymrun/heym",
-    "stars": 1760,
+    "stars": 1833,
     "desc": "Build agentic systems. Run them with confidence. Orchestrate agents, automate business processes, inspect every execution, and keep humans in control. Deploy Heym on your own infrastructure(k8s - docker)",
     "url": "https://github.com/heymrun/heym",
     "license": "NOASSERTION",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    }
   ]
  },
  "llm": {
   "label": "AI / LLM chạy cục bộ",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "open-webui/open-webui",
-    "stars": 159467,
+    "stars": 159580,
     "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "url": "https://github.com/open-webui/open-webui",
     "license": "NOASSERTION",
@@ -1688,16 +1688,16 @@
    },
    {
     "full_name": "unslothai/unsloth",
-    "stars": 80198,
+    "stars": 80266,
     "desc": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
     "url": "https://github.com/unslothai/unsloth",
     "license": "Apache-2.0",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "pathwaycom/serviette",
-    "stars": 58675,
+    "stars": 58677,
     "desc": "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.",
     "url": "https://github.com/pathwaycom/serviette",
     "license": "MIT",
@@ -1706,7 +1706,7 @@
    },
    {
     "full_name": "janhq/jan",
-    "stars": 46095,
+    "stars": 46153,
     "desc": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
     "url": "https://github.com/janhq/jan",
     "license": "NOASSERTION",
@@ -1715,7 +1715,7 @@
    },
    {
     "full_name": "khoj-ai/khoj",
-    "stars": 38235,
+    "stars": 38251,
     "desc": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
     "url": "https://github.com/khoj-ai/khoj",
     "license": "AGPL-3.0",
@@ -1724,25 +1724,25 @@
    },
    {
     "full_name": "langfuse/langfuse",
-    "stars": 37808,
+    "stars": 37855,
     "desc": "🪢 Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.",
     "url": "https://github.com/langfuse/langfuse",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "onyx-dot-app/onyx",
-    "stars": 33530,
+    "stars": 33556,
     "desc": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
     "url": "https://github.com/onyx-dot-app/onyx",
     "license": "NOASSERTION",
     "language": "Python",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "Zackriya-Solutions/meetily",
-    "stars": 33020,
+    "stars": 33056,
     "desc": "Privacy-first AI meeting note taker for Windows, macOS and Linux. Free, open source (MIT). On-device Whisper/Parakeet transcription and speaker diarization, no meeting bot. Open-source alternative to Granola, Otter and Fireflies. https://meetily.ai",
     "url": "https://github.com/Zackriya-Solutions/meetily",
     "license": "MIT",
@@ -1751,52 +1751,52 @@
    },
    {
     "full_name": "kortix-ai/CompanyOS",
-    "stars": 20795,
+    "stars": 20801,
     "desc": "Kortix CompanyOS – the open-source operating system for the AI-native company. Connect every data source, orchestrate agents, and keep their skills, memory and connectors in one git repo you own. Any model, in our cloud or yours.",
     "url": "https://github.com/kortix-ai/CompanyOS",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "rocketride-org/rocketride-server",
-    "stars": 19989,
+    "stars": 19983,
     "desc": "RocketRide is an open source AI meta-harness with the only enterprise-grade runtime built on C++. Build, test and publish durable agents that scale in production.",
     "url": "https://github.com/rocketride-org/rocketride-server",
     "license": "MIT",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "OpenByteInc/QuantDinger",
-    "stars": 13975,
+    "stars": 13991,
     "desc": "The most complete open-source, self-hosted Agentic Trading OS—AI research, Python strategies, factor discovery, backtesting, optimization, paper/live multi-asset execution, risk controls, monitoring, MCP, and multi-tenant SaaS in one auditable stack.",
     "url": "https://github.com/OpenByteInc/QuantDinger",
     "license": "Apache-2.0",
     "language": "Python",
-    "updated": "2026-11-22"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "EKKOLearnAI/ekko-studio",
-    "stars": 11815,
+    "stars": 11824,
     "desc": "Ekko Studio is a local-first AI workspace for multi-agent chat, coding, and visual workflows, available on desktop and the web.",
     "url": "https://github.com/EKKOLearnAI/ekko-studio",
     "license": "NOASSERTION",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "KKKKhazix/AIHOT",
-    "stars": 11371,
+    "stars": 11417,
     "desc": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
     "url": "https://github.com/KKKKhazix/AIHOT",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "getumbrel/llama-gpt",
-    "stars": 10923,
+    "stars": 10924,
     "desc": "A self-hosted, offline, ChatGPT-like chatbot. Powered by Llama 2. 100% private, with no data leaving your device. New: Code Llama support!",
     "url": "https://github.com/getumbrel/llama-gpt",
     "license": "MIT",
@@ -1805,7 +1805,7 @@
    },
    {
     "full_name": "chaitin/PandaWiki",
-    "stars": 10545,
+    "stars": 10564,
     "desc": "PandaWiki 是一款 AI 大模型驱动的开源知识库搭建系统，帮助你快速构建智能化的 产品文档、技术文档、FAQ、博客系统，借助大模型的力量为你提供 AI 创作、AI 问答、AI 搜索等能力。",
     "url": "https://github.com/chaitin/PandaWiki",
     "license": "AGPL-3.0",
@@ -1814,58 +1814,58 @@
    },
    {
     "full_name": "elie222/rakazo",
-    "stars": 9715,
+    "stars": 9802,
     "desc": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
     "url": "https://github.com/elie222/rakazo",
     "license": "Apache-2.0",
     "language": "TypeScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "MervinPraison/PraisonAI",
-    "stars": 9381,
+    "stars": 9385,
     "desc": "Private AI agents for highly regulated teams, and for anyone who wants AI on their own computer. Open-source Python agent framework that runs fully offline.",
     "url": "https://github.com/MervinPraison/PraisonAI",
     "license": "MIT",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "deeplethe/utopia",
-    "stars": 8665,
+    "stars": 8667,
     "desc": "World's first open-source enterprise world model.",
     "url": "https://github.com/deeplethe/utopia",
     "license": "Apache-2.0",
     "language": "Rust",
-    "updated": "2026-11-25"
-   },
-   {
-    "full_name": "Osmantic/ODS",
-    "stars": 7917,
-    "desc": "ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server.",
-    "url": "https://github.com/Osmantic/ODS",
-    "license": "Apache-2.0",
-    "language": "Python",
-    "updated": "2026-11-19"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "mdiri-ai/SoduWork",
-    "stars": 7650,
+    "stars": 8122,
     "desc": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
     "url": "https://github.com/mdiri-ai/SoduWork",
     "license": "MIT",
     "language": "JavaScript",
+    "updated": "2026-11-26"
+   },
+   {
+    "full_name": "Osmantic/ODS",
+    "stars": 7919,
+    "desc": "ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server.",
+    "url": "https://github.com/Osmantic/ODS",
+    "license": "Apache-2.0",
+    "language": "Python",
     "updated": "2026-11-25"
    }
   ]
  },
  "password": {
   "label": "Quản lý mật khẩu",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "keepassxreboot/keepassxc",
-    "stars": 30138,
+    "stars": 30166,
     "desc": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”.",
     "url": "https://github.com/keepassxreboot/keepassxc",
     "license": "NOASSERTION",
@@ -1873,17 +1873,8 @@
     "updated": "2026-11-24"
    },
    {
-    "full_name": "keeweb/keeweb",
-    "stars": 13045,
-    "desc": "Free cross-platform password manager compatible with KeePass",
-    "url": "https://github.com/keeweb/keeweb",
-    "license": "NOASSERTION",
-    "language": "HTML",
-    "updated": "2026-05-08"
-   },
-   {
     "full_name": "Kunzisoft/KeePassDX",
-    "stars": 7738,
+    "stars": 7747,
     "desc": "Lightweight vault and password manager for Android, KeePassDX allows editing encrypted data in a single file in KeePass format and fill in the forms in a secure way.",
     "url": "https://github.com/Kunzisoft/KeePassDX",
     "license": "GPL-3.0",
@@ -1897,11 +1888,11 @@
     "url": "https://github.com/gopasspw/gopass",
     "license": "MIT",
     "language": "Go",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "MacPass/MacPass",
-    "stars": 6904,
+    "stars": 6905,
     "desc": "A native macOS KeePass client",
     "url": "https://github.com/MacPass/MacPass",
     "license": "NOASSERTION",
@@ -1910,7 +1901,7 @@
    },
    {
     "full_name": "PhilippC/keepass2android",
-    "stars": 6419,
+    "stars": 6420,
     "desc": "Password manager app for Android",
     "url": "https://github.com/PhilippC/keepass2android",
     "license": "GPL-3.0",
@@ -1919,7 +1910,7 @@
    },
    {
     "full_name": "passbolt/passbolt_api",
-    "stars": 6247,
+    "stars": 6248,
     "desc": "Passbolt Community Edition (CE) API. The JSON API for the open source password manager for teams!",
     "url": "https://github.com/passbolt/passbolt_api",
     "license": "AGPL-3.0",
@@ -1928,7 +1919,7 @@
    },
    {
     "full_name": "lesspass/lesspass",
-    "stars": 6087,
+    "stars": 6088,
     "desc": ":key: stateless open source password manager",
     "url": "https://github.com/lesspass/lesspass",
     "license": "GPL-3.0",
@@ -1937,7 +1928,7 @@
    },
    {
     "full_name": "shuaiplus/nodewarden",
-    "stars": 4223,
+    "stars": 4232,
     "desc": "Bitwarden-compatible server running on Cloudflare Workers",
     "url": "https://github.com/shuaiplus/nodewarden",
     "license": "NOASSERTION",
@@ -1955,12 +1946,12 @@
    },
    {
     "full_name": "aliasvault/aliasvault",
-    "stars": 3567,
+    "stars": 3571,
     "desc": "Privacy-first password manager with built-in email aliasing. Fully encrypted and self-hostable.",
     "url": "https://github.com/aliasvault/aliasvault",
     "license": "AGPL-3.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "padloc/padloc",
@@ -1991,7 +1982,7 @@
    },
    {
     "full_name": "keepassxreboot/keepassxc-browser",
-    "stars": 2408,
+    "stars": 2409,
     "desc": "KeePassXC Browser Extension",
     "url": "https://github.com/keepassxreboot/keepassxc-browser",
     "license": "GPL-3.0",
@@ -2000,16 +1991,16 @@
    },
    {
     "full_name": "nilsteampassnet/TeamPass",
-    "stars": 1896,
+    "stars": 1897,
     "desc": "Self-hosted collaborative password manager for teams: folder-level access control, AES-256-GCM encryption, LDAP/AD, OAuth2 SSO, audit trail, REST API, browser extension. PHP/MySQL, Docker.",
     "url": "https://github.com/nilsteampassnet/TeamPass",
     "license": "GPL-3.0",
     "language": "PHP",
-    "updated": "2026-11-21"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "keepassium/KeePassium",
-    "stars": 1768,
+    "stars": 1769,
     "desc": "KeePass-compatible password manager for iOS and macOS",
     "url": "https://github.com/keepassium/KeePassium",
     "license": "NOASSERTION",
@@ -2027,7 +2018,7 @@
    },
    {
     "full_name": "Lifeforge-app/lifeforge",
-    "stars": 1732,
+    "stars": 1733,
     "desc": "A self-hosted solution to streamline and organize all aspects of your life.",
     "url": "https://github.com/Lifeforge-app/lifeforge",
     "license": "NOASSERTION",
@@ -2042,30 +2033,39 @@
     "license": "MIT",
     "language": "Swift",
     "updated": "2026-09-26"
+   },
+   {
+    "full_name": "drduh/pwd.sh",
+    "stars": 1565,
+    "desc": "Manage secrets with Bash and GnuPG symmetric encryption",
+    "url": "https://github.com/drduh/pwd.sh",
+    "license": "MIT",
+    "language": "Shell",
+    "updated": "2026-10-19"
    }
   ]
  },
  "photos": {
   "label": "Ảnh / media / phát phim",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "mediacms-io/mediacms",
-    "stars": 5200,
+    "stars": 5201,
     "desc": "MediaCMS is a modern, fully featured open source video and media CMS",
     "url": "https://github.com/mediacms-io/mediacms",
     "license": "AGPL-3.0",
     "language": "Python",
-    "updated": "2026-11-19"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "fireshare-app/fireshare",
-    "stars": 1534,
+    "stars": 1532,
     "desc": "Self host your media and share with unique links",
     "url": "https://github.com/fireshare-app/fireshare",
     "license": "GPL-3.0",
     "language": "JavaScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "ridhwaans/homehost",
@@ -2087,12 +2087,12 @@
    },
    {
     "full_name": "GeiserX/Telegram-Archive",
-    "stars": 259,
+    "stars": 260,
     "desc": "Own your Telegram history. Automated, incremental backups with a local web viewer that feels just like the real app. Docker-ready and supports public chat sharing",
     "url": "https://github.com/GeiserX/Telegram-Archive",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "robinp7720/Oblecto",
@@ -2128,7 +2128,7 @@
     "url": "https://github.com/mrblomblo/blombooru",
     "license": "MIT",
     "language": "Python",
-    "updated": "2026-11-22"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "aminnausin/mediaServer",
@@ -2146,7 +2146,7 @@
     "url": "https://github.com/Alchemist-Aloha/StashFlow",
     "license": "GPL-3.0",
     "language": "Dart",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "MorganKryze/JellyFlare",
@@ -2164,7 +2164,7 @@
     "url": "https://github.com/jakejarvis/sofa",
     "license": "MIT",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "davidborzek/tvhgo",
@@ -2173,7 +2173,7 @@
     "url": "https://github.com/davidborzek/tvhgo",
     "license": "MIT",
     "language": "Go",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "rfsbraz/telegram-downloader",
@@ -2182,7 +2182,7 @@
     "url": "https://github.com/rfsbraz/telegram-downloader",
     "license": "MIT",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "msihly/Medior",
@@ -2191,7 +2191,7 @@
     "url": "https://github.com/msihly/Medior",
     "license": "?",
     "language": "TypeScript",
-    "updated": "2026-11-22"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "streamer45/streamkit",
@@ -2233,29 +2233,29 @@
  },
  "monitoring": {
   "label": "Giám sát / DevOps",
-  "updated": "2026-11-25 04:10 UTC",
+  "updated": "2026-11-26 03:32 UTC",
   "items": [
    {
     "full_name": "louislam/uptime-kuma",
-    "stars": 94844,
+    "stars": 94903,
     "desc": "A fancy self-hosted monitoring tool",
     "url": "https://github.com/louislam/uptime-kuma",
     "license": "MIT",
     "language": "JavaScript",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "netdata/netdata",
-    "stars": 81619,
+    "stars": 81648,
     "desc": "Full-stack observability · Metrics · Logs · Traces · Flows · Topology · Infrastructure · APM · NPM · DBM · RUM · Synthetics · Cloud · AI SRE · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Redfish · 2000+ integrations",
     "url": "https://github.com/netdata/netdata",
     "license": "GPL-3.0",
     "language": "Go",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "glanceapp/glance",
-    "stars": 38366,
+    "stars": 38376,
     "desc": "A self-hosted dashboard that puts all your feeds in one place",
     "url": "https://github.com/glanceapp/glance",
     "license": "AGPL-3.0",
@@ -2264,34 +2264,34 @@
    },
    {
     "full_name": "langfuse/langfuse",
-    "stars": 37808,
+    "stars": 37855,
     "desc": "🪢 Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.",
     "url": "https://github.com/langfuse/langfuse",
-    "license": "NOASSERTION",
-    "language": "TypeScript",
-    "updated": "2026-11-24"
-   },
-   {
-    "full_name": "dgtlmoon/changedetection.io",
-    "stars": 36016,
-    "desc": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, price drops, restock alerts, and website defacement monitoring— MCP included! all for free or enjoy our SaaS plan!",
-    "url": "https://github.com/dgtlmoon/changedetection.io",
-    "license": "Apache-2.0",
-    "language": "Python",
-    "updated": "2026-11-24"
-   },
-   {
-    "full_name": "SigNoz/signoz",
-    "stars": 32734,
-    "desc": "SigNoz is an open-source, OpenTelemetry-native observability platform for your team and their AI agents. Get logs, metrics, and traces in one tool with features like APM, distributed tracing, log management, infra monitoring, etc. Combined with SigNoz MCP and a native AI teammate (in SigNoz Cloud) it helps you build more resilient apps.",
-    "url": "https://github.com/SigNoz/signoz",
     "license": "NOASSERTION",
     "language": "TypeScript",
     "updated": "2026-11-25"
    },
    {
+    "full_name": "dgtlmoon/changedetection.io",
+    "stars": 36045,
+    "desc": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, price drops, restock alerts, and website defacement monitoring— MCP included! all for free or enjoy our SaaS plan!",
+    "url": "https://github.com/dgtlmoon/changedetection.io",
+    "license": "Apache-2.0",
+    "language": "Python",
+    "updated": "2026-11-26"
+   },
+   {
+    "full_name": "SigNoz/signoz",
+    "stars": 32741,
+    "desc": "SigNoz is an open-source, OpenTelemetry-native observability platform for your team and their AI agents. Get logs, metrics, and traces in one tool with features like APM, distributed tracing, log management, infra monitoring, etc. Combined with SigNoz MCP and a native AI teammate (in SigNoz Cloud) it helps you build more resilient apps.",
+    "url": "https://github.com/SigNoz/signoz",
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "updated": "2026-11-26"
+   },
+   {
     "full_name": "henrygd/beszel",
-    "stars": 27613,
+    "stars": 27638,
     "desc": "Lightweight server monitoring with historical data, docker stats, and alerts.",
     "url": "https://github.com/henrygd/beszel",
     "license": "MIT",
@@ -2300,7 +2300,7 @@
    },
    {
     "full_name": "ccfos/nightingale",
-    "stars": 13519,
+    "stars": 13522,
     "desc": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
     "url": "https://github.com/ccfos/nightingale",
     "license": "Apache-2.0",
@@ -2309,7 +2309,7 @@
    },
    {
     "full_name": "TwiN/gatus",
-    "stars": 12888,
+    "stars": 12893,
     "desc": "Automated developer-oriented status page with alerting and incident support",
     "url": "https://github.com/TwiN/gatus",
     "license": "Apache-2.0",
@@ -2318,7 +2318,7 @@
    },
    {
     "full_name": "ClickHouse/ClickStack",
-    "stars": 10075,
+    "stars": 10078,
     "desc": "Resolve production issues, fast. An open source observability platform unifying session replays, logs, metrics, traces and errors powered by ClickHouse and OpenTelemetry.",
     "url": "https://github.com/ClickHouse/ClickStack",
     "license": "MIT",
@@ -2336,7 +2336,7 @@
    },
    {
     "full_name": "aceberg/WatchYourLAN",
-    "stars": 7675,
+    "stars": 7676,
     "desc": "Lightweight network IP scanner written in Go. With notifications, history, export to Grafana",
     "url": "https://github.com/aceberg/WatchYourLAN",
     "license": "MIT",
@@ -2345,25 +2345,25 @@
    },
    {
     "full_name": "apache/hertzbeat",
-    "stars": 7476,
+    "stars": 7478,
     "desc": "An AI-powered next-generation open source real-time observability system.",
     "url": "https://github.com/apache/hertzbeat",
     "license": "Apache-2.0",
     "language": "Java",
-    "updated": "2026-11-23"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "rcourtman/Pulse",
-    "stars": 7199,
+    "stars": 7212,
     "desc": "Real-time monitoring dashboard for Proxmox VE, PBS, Docker, Kubernetes, TrueNAS and vSphere. Self-hosted, with alerts for failed backups, full disks, unhealthy containers and offline nodes.",
     "url": "https://github.com/rcourtman/Pulse",
     "license": "MIT",
     "language": "Go",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    },
    {
     "full_name": "uptrace/uptrace",
-    "stars": 4323,
+    "stars": 4324,
     "desc": "Open source APM: OpenTelemetry traces, metrics, and logs",
     "url": "https://github.com/uptrace/uptrace",
     "license": "AGPL-3.0",
@@ -2372,25 +2372,25 @@
    },
    {
     "full_name": "lmnr-ai/lmnr",
-    "stars": 3521,
+    "stars": 3522,
     "desc": "Laminar - open-source observability platform purpose-built for AI agents. YC S24.",
     "url": "https://github.com/lmnr-ai/lmnr",
     "license": "Apache-2.0",
     "language": "TypeScript",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "MacRimi/ProxMenux",
-    "stars": 3353,
+    "stars": 3356,
     "desc": "Menu-driven Proxmox VE toolkit — post-install, backup/restore and a live web dashboard for the homelab.",
     "url": "https://github.com/MacRimi/ProxMenux",
     "license": "GPL-3.0",
     "language": "Python",
-    "updated": "2026-11-24"
+    "updated": "2026-11-25"
    },
    {
     "full_name": "operacle/checkcle",
-    "stars": 3330,
+    "stars": 3329,
     "desc": "CheckCle is a self-hosted, open-source monitoring platform for seamless, real-time full-stack systems, applications, and infrastructure. It provides real-time uptime monitoring, distributed checks, incident tracking, and alerts. All deployable anywhere.",
     "url": "https://github.com/operacle/checkcle",
     "license": "MIT",
@@ -2413,7 +2413,7 @@
     "url": "https://github.com/monoscope-tech/monoscope",
     "license": "AGPL-3.0",
     "language": "Haskell",
-    "updated": "2026-11-25"
+    "updated": "2026-11-26"
    }
   ]
  }
